@@ -3,104 +3,127 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Soledad Calvo — Candidata a Diputada • Distrito 6</title>
-  <meta name="description" content="Sitio oficial de la campaña de Soledad Calvo, candidata a diputada por el Distrito 6. Propuestas y prioridades." />
+  <title>Soledad Calvo Herrera Herrera — Candidata a Diputada • Distrito 6</title>
+  <meta name="description" content="Sitio oficial de la campaña de Soledad Calvo Herrera Herrera, candidata a diputada por el Distrito 6. Propuestas y prioridades." />
   <link rel="canonical" href="https://soledadcalvo.cl/" />
   <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Soledad Calvo — Diputada Distrito 6" />
+  <meta property="og:title" content="Soledad Calvo Herrera — Diputada Distrito 6" />
   <meta property="og:description" content="Conoce las prioridades para el Distrito 6." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://soledadcalvo.cl/" />
   <meta property="og:image" content="/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Soledad Calvo — Diputada Distrito 6" />
+  <meta name="twitter:title" content="Soledad Calvo Herrera — Diputada Distrito 6" />
   <meta name="twitter:description" content="Conoce las prioridades para el Distrito 6." />
   <meta name="twitter:image" content="/og-image.jpg" />
 
+  <!-- Favicons -->
   <link rel="icon" href="/favicon.ico" />
 
+  <!-- Tipografía según norma (Roboto) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
   <style>
+    /* Paleta oficial PNL (ecosistema cromático) */
     :root{
-      --bg:#0f172a;         /* slate-900 */
-      --fg:#e2e8f0;         /* slate-200 */
-      --muted:#94a3b8;      /* slate-400 */
-      --brand:#ec4899;      /* pink-500 */
-      --brand-2:#06b6d4;    /* cyan-500 */
-      --card:#111827;       /* gray-900 */
-      --ok:#10b981;         /* emerald-500 */
-      --warn:#f59e0b;       /* amber-500 */
-      --danger:#ef4444;     /* red-500 */
+      --base:#1B191A;   /* fondo principal */
+      --primary:#182D56;/* azul institucional */
+      --accent:#FBA931; /* acento */
+      --paper:#FFFFFF;  /* blanco */
+      --muted:#E5E5E5;  /* gris claro */
+      --text:#1B191A;   /* texto sobre base oscura */
       --radius:14px;
+      --safe: clamp(12px, 3vw, 24px); /* margen de seguridad para logo/elementos */
     }
+
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
-      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      color:var(--fg); background: radial-gradient(circle at 20% -10%, rgba(6,182,212,.2), transparent 35%),
-                       radial-gradient(circle at 80% -10%, rgba(236,72,153,.15), transparent 40%),
-                       var(--bg);
+      margin:0; font-family: 'Roboto', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      font-weight:300; /* Roboto Light por norma */
+      color:var(--text);
+      background:
+        radial-gradient(40vw 40vw at 15% -10%, rgba(24,45,86,.18), transparent 60%),
+        radial-gradient(40vw 40vw at 85% -10%, rgba(251,169,49,.12), transparent 60%),
+        linear-gradient(to bottom, var(--muted) 0%, var(--paper) 60%);
     }
+    h1,h2,h3,strong{font-weight:700}
     a{color:inherit; text-decoration:none}
     .container{max-width:1080px; margin-inline:auto; padding:24px}
-    header{position:sticky; top:0; backdrop-filter:saturate(180%) blur(8px); background:rgba(15,23,42,.6); border-bottom:1px solid rgba(148,163,184,.15); z-index:30}
+
+    /* Header */
+    header{position:sticky; top:0; backdrop-filter:saturate(180%) blur(8px); background:var(--primary); border-bottom:3px solid var(--accent); z-index:30}
     .nav{display:flex; align-items:center; justify-content:space-between; gap:16px}
     .brand{display:flex; align-items:center; gap:12px}
-    .badge{display:inline-grid; place-items:center; width:40px; height:40px; background:linear-gradient(135deg, var(--brand), var(--brand-2)); color:white; font-weight:800; border-radius:50%}
+
+    /* Bloque de isotipo según norma: isotipo SÍ puede ir solo; logotipo NO solo */
+    .logo-lockup{display:flex; align-items:center; gap:12px; padding:var(--safe); background:var(--paper); border-radius:12px; border:1px solid rgba(24,45,86,.15)}
+    .logo-lockup img{display:block; height:32px; width:auto; min-height:25px} /* tamaño mínimo web pequeño */
+    .logo-text{display:flex; flex-direction:column}
+    .logo-text small{color:var(--base); font-weight:400}
+
     .links{display:flex; gap:12px; align-items:center}
-    .btn{display:inline-flex; align-items:center; gap:8px; padding:12px 16px; border-radius:999px; font-weight:700; border:1px solid rgba(226,232,240,.2);}
+    .btn{display:inline-flex; align-items:center; gap:8px; padding:12px 16px; border-radius:999px; font-weight:700; border:1px solid rgba(229,229,229,.25);}
     .btn:hover{transform:translateY(-1px)}
-    .btn-primary{background:linear-gradient(135deg,var(--brand),var(--brand-2)); border-color:transparent}
-    .btn-outline{background:transparent}
+    .btn-primary{background:var(--primary); color:var(--paper); border-color:transparent}
+    .btn-outline{background:transparent; color:var(--primary); border-color:rgba(24,45,86,.5)}
+    .btn-accent{background:var(--accent); color:#1b191a; border-color:transparent}
 
     /* Estado desactivado (visual, sin interacción) */
     .is-disabled{opacity:.55; filter:saturate(.6) grayscale(.08); cursor:not-allowed; pointer-events:none}
-    .chip{display:inline-flex; align-items:center; gap:6px; font-size:12px; padding:6px 10px; border-radius:999px; border:1px solid rgba(148,163,184,.25); color:var(--muted)}
+    .chip{display:inline-flex; align-items:center; gap:6px; font-size:12px; padding:6px 10px; border-radius:999px; border:1px solid var(--accent); color:var(--primary)}
 
+    /* Hero */
     .hero{padding:72px 0 32px; text-align:center}
     .hero h1{font-size: clamp(32px, 6vw, 56px); line-height:1.05; margin:0 0 12px; letter-spacing:-.02em}
     .hero p{margin:0 auto 20px; max-width:800px; color:var(--muted); font-size: clamp(16px, 2.5vw, 20px)}
     .cta{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:16px}
 
+    /* Cards / grid */
     .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:20px}
-    .card{grid-column: span 12; background:rgba(17,24,39,.66); border:1px solid rgba(148,163,184,.15); padding:20px; border-radius:var(--radius); position:relative}
-    .card h3{margin:0 0 6px}
-    .card p{margin:0; color:var(--muted)}
+    .card{grid-column: span 12; background:var(--paper); border:1px solid rgba(229,229,229,.12); padding:20px; border-radius:var(--radius); position:relative}
+    .card h3{margin:0 0 6px; color:var(--primary)}
+    .card p{margin:0; color:var(--text)}
     @media(min-width:720px){ .card{grid-column:span 4} }
 
     section{padding:28px 0}
-    .kicker{display:inline-block; text-transform:uppercase; letter-spacing:.12em; font-size:12px; color:var(--muted); margin-bottom:8px}
+    .kicker{display:inline-block; text-transform:uppercase; letter-spacing:.12em; font-size:12px; color:var(--accent); margin-bottom:8px}
     h2{margin:0 0 8px; font-size: clamp(22px,3.6vw,32px)}
 
     .form{display:grid; gap:12px; max-width:720px}
     .row{display:grid; gap:12px}
     @media(min-width:680px){ .row{grid-template-columns:1fr 1fr} }
-    label{font-size:14px; color:var(--fg)}
+    label{font-size:14px}
     input, select, textarea{
-      width:100%; padding:12px 14px; background:#0b1220; color:var(--fg);
-      border:1px solid rgba(148,163,184,.3); border-radius:10px; outline:none;
+      width:100%; padding:12px 14px; background:var(--muted); color:var(--text);
+      border:1px solid rgba(229,229,229,.25); border-radius:10px; outline:none;
     }
-    input:focus,textarea:focus,select:focus{border-color:var(--brand)}
+    input:focus,textarea:focus,select:focus{border-color:var(--accent)}
     .note{color:var(--muted); font-size:13px}
 
-    /* Sección con overlay "Próximamente" */
+    /* Secciones desactivadas con overlay "Próximamente" */
     .section-disabled{position:relative}
     .section-disabled::after{
       content:"Próximamente";
       position:absolute; top:16px; right:16px; font-size:12px; letter-spacing:.06em;
-      background:rgba(236,72,153,.1); color:#fbcfe8; border:1px solid rgba(236,72,153,.35);
+      background:rgba(251,169,49,.15); color:var(--paper); border:1px solid rgba(251,169,49,.35);
       padding:6px 10px; border-radius:999px;
     }
-    .masked{mask-image: linear-gradient(to bottom, #000 70%, transparent 100%)}
+    .masked{mask-image: linear-gradient(to bottom, var(--paper) 70%, transparent 100%)}
 
-    footer{padding:40px 0; border-top:1px solid rgba(148,163,184,.15); color:var(--muted)}
+    /* Márgenes de seguridad para logo / composición (norma de márgenes) */
+    .safe{padding:var(--safe)}
+
+    footer{padding:40px 0; background:var(--primary); border-top:1px solid rgba(255,255,255,.15); color:var(--paper)}
     .small{font-size:12px}
+    header, header a{color:var(--paper)}
   </style>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Soledad Calvo",
+    "name": "Soledad Calvo Herrera",
     "url": "https://soledadcalvo.cl/",
     "jobTitle": "Candidata a Diputada",
     "address": {"@type":"PostalAddress","addressCountry":"CL"}
@@ -110,34 +133,41 @@
 <body>
   <header>
     <div class="container nav">
-      <a class="brand" href="#">
-        <span class="badge">SC</span>
-        <strong>Soledad Calvo</strong>
+      <a class="brand" href="#" aria-label="Inicio">
+        <!-- Isotipo del PNL dentro de bloque en blanco para respetar contraste y usos aprobados -->
+        <span class="logo-lockup" role="img" aria-label="Partido Nacional Libertario — isotipo">
+          <!-- Reemplaza por el archivo real cuando lo tengas -->
+          <img src="/brand/pnl-isotipo.svg" alt="Isotipo PNL" height="32" />
+        </span>
+        <div class="logo-text">
+          <strong>Soledad Calvo Herrera</strong>
+          <small>Distrito 6</small>
+        </div>
       </a>
       <nav class="links">
         <a class="btn btn-outline" href="#propuestas">Propuestas</a>
         <a class="btn btn-outline is-disabled" aria-disabled="true" title="Próximamente" href="#sumate">Súmate</a>
-        <a class="btn btn-primary is-disabled" aria-disabled="true" title="Próximamente" href="#dona">Dona</a>
+        <a class="btn btn-accent is-disabled" aria-disabled="true" title="Próximamente" href="#dona">Dona</a>
       </nav>
     </div>
   </header>
 
   <main>
     <!-- HERO -->
-    <section class="hero container" id="inicio">
+    <section class="hero container safe" id="inicio">
       <span class="kicker">Distrito 6</span>
-      <h1>Soledad Calvo<br/>Candidata a Diputada</h1>
+      <h1>Soledad Calvo Herrera<br/>Candidata a Diputada</h1>
       <p>Una voz cercana y firme para avanzar en <strong>seguridad</strong>, <strong>empleo</strong> y <strong>servicios públicos dignos</strong>. Conoce las prioridades y súmate cuando activemos los formularios.</p>
       <div class="cta">
-        <a class="btn btn-primary" href="#propuestas">Ver propuestas</a>
+        <a class="btn btn-accent" href="#propuestas">Ver propuestas</a>
         <span class="chip" title="Funciones en preparación">🔒 Funciones en preparación</span>
       </div>
     </section>
 
     <!-- PROPUESTAS CLAVE -->
-    <section class="container" id="propuestas">
+    <section class="container safe" id="propuestas">
       <span class="kicker">Tres prioridades</span>
-      <h2>Lo urgente para el D7</h2>
+      <h2>Lo urgente para el D6</h2>
       <div class="grid" style="margin-top:12px">
         <article class="card">
           <h3>Seguridad y orden</h3>
@@ -155,20 +185,20 @@
     </section>
 
     <!-- DONA (desactivado visualmente) -->
-    <section class="container section-disabled masked" id="dona">
+    <section class="container section-disabled masked safe" id="dona">
       <span class="kicker">Apoya la campaña</span>
       <h2>Tu aporte hace la diferencia</h2>
       <div class="card">
         <p class="note">La pasarela de donaciones estará disponible pronto. Esta sección está desactivada por ahora.</p>
         <div class="cta" style="justify-content:flex-start">
-          <button class="btn btn-primary is-disabled" aria-disabled="true" title="Próximamente">Dona ahora</button>
+          <button class="btn btn-accent is-disabled" aria-disabled="true" title="Próximamente">Dona ahora</button>
           <button class="btn btn-outline is-disabled" aria-disabled="true" title="Próximamente">Ver transparencia</button>
         </div>
       </div>
     </section>
 
     <!-- SÚMATE (desactivado visualmente) -->
-    <section class="container section-disabled masked" id="sumate">
+    <section class="container section-disabled masked safe" id="sumate">
       <span class="kicker">Participa</span>
       <h2>Súmate como voluntario/a</h2>
       <form class="form" onsubmit="return false" aria-disabled="true">
@@ -200,21 +230,19 @@
         <p class="note">Activaremos este formulario en breve.</p>
       </form>
     </section>
-
-    <!-- TRANSPARENCIA (desactivado visualmente) -->
-    <section class="container section-disabled masked" id="transparencia">
-      <span class="kicker">Compromiso</span>
-      <h2>Transparencia</h2>
-      <div class="card">
-        <p class="note">Publicaremos aquí reportes mensuales de ingresos y gastos cuando habilitemos la función.</p>
-      </div>
-    </section>
   </main>
 
   <footer>
-    <div class="container">
-      <strong>Soledad Calvo</strong>
-      <div class="small">Candidata a Diputada — Distrito 6</div>
+    <div class="container safe">
+      <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap">
+        <span class="logo-lockup" role="img" aria-label="Partido Nacional Libertario — isotipo">
+          <img src="/brand/pnl-isotipo.svg" alt="Isotipo PNL" height="28" />
+        </span>
+        <div>
+          <strong>Soledad Calvo Herrera Herrera</strong>
+          <div class="small">Candidata a Diputada — Distrito 6</div>
+        </div>
+      </div>
     </div>
   </footer>
 
@@ -223,4 +251,3 @@
   -->
 </body>
 </html>
-
