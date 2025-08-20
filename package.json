@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "solecalvo-landing",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "next build",
+    "start": "next start",
+    "dev": "next dev -p 3000"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  }
+}
