@@ -9,13 +9,19 @@ export function middleware(req) {
       headers: { 'WWW-Authenticate': 'Basic realm="Protected"' },
     });
   }
-  const [user, pass] = Buffer.from(encoded, 'base64').toString().split(':');
+
+  // Edge runtime: usar atob (Web API), no Buffer
+  const [user, pass] = atob(encoded).split(':');
+
   if (user !== process.env.BASIC_AUTH_USER || pass !== process.env.BASIC_AUTH_PASS) {
     return new NextResponse('Forbidden', { status: 403 });
   }
   return NextResponse.next();
 }
 
+// Excluye assets/_next; protege lo demás (incluye /index.html)
 export const config = {
-  matcher: ['/((?!_next/|favicon.ico|.*\\.(png|jpg|jpeg|gif|svg|webp|css|js|map)).*)'],
+  matcher: [
+    '/((?!_next/|favicon.ico|.*\\.(png|jpg|jpeg|gif|svg|webp|css|js|map)).*)',
+  ],
 };
