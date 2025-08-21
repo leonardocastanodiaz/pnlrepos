@@ -134,6 +134,20 @@
     .sections-list li + li{border-left:1px solid var(--accent); padding-left:14px; margin-left:6px}
     .sections-list a{font-weight:700; color:var(--primary); font-size:14px}
     .sections-list a.is-disabled{pointer-events:none; opacity:.6}
+    /* Foto destacada */
+    .feature-photo{
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(24,45,86,.12);
+      background: var(--muted);
+    }
+    .feature-photo img{
+      display:block;
+      width:100%;
+      height: clamp(220px, 45vw, 440px); /* recorte elegante para foto vertical */
+      object-fit: cover;
+      object-position: 50% 30%; /* sube un poco el encuadre */
+    }
   </style>
 
   <script type="application/ld+json">
@@ -181,6 +195,17 @@
         <span class="chip" title="Funciones en preparación">🔒 Funciones en preparación</span>
       </div>
     </section>
+
+    <!-- FOTO DESTACADA -->
+    <section class="container safe" id="foto-destacada">
+      <figure class="feature-photo">
+        <img
+          src="/img/soledad-calvo-d6.jpg"
+          alt="Soledad Calvo junto a dirigente del Partido Nacional Libertario en actividad"
+          loading="lazy" decoding="async">
+      </figure>
+    </section>
+
 
     <!-- SECCIONES RÁPIDAS -->
     <nav class="container safe sections-nav" aria-label="Secciones principales">
