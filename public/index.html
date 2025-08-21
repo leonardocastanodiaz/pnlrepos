@@ -3,18 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Soledad Calvo Herrera Herrera — Candidata a Diputada • Distrito 6</title>
-  <meta name="description" content="Sitio oficial de la campaña de Soledad Calvo Herrera Herrera, candidata a diputada por el Distrito 6. Propuestas y prioridades." />
+
+  <title>Soledad Calvo — Candidata a Diputada · Distrito 6 (Partido Nacional Libertario)</title>
+
+  <meta name="description" content="Sitio oficial de Soledad Calvo, candidata a diputada por el Partido Nacional Libertario en el Distrito 6. Conoce prioridades, propuestas y próximos pasos de campaña." />
   <link rel="canonical" href="https://soledadcalvo.cl/" />
+
   <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Soledad Calvo Herrera — Diputada Distrito 6" />
-  <meta property="og:description" content="Conoce las prioridades para el Distrito 6." />
+  <meta property="og:title" content="Soledad Calvo — Candidata a Diputada · D6 (Partido Nacional Libertario)" />
+  <meta property="og:description" content="Candidata a diputada por el Partido Nacional Libertario en el Distrito 6. Prioridades y propuestas." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://soledadcalvo.cl/" />
   <meta property="og:image" content="/og-image.jpg" />
+
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Soledad Calvo Herrera — Diputada Distrito 6" />
-  <meta name="twitter:description" content="Conoce las prioridades para el Distrito 6." />
+  <meta name="twitter:title" content="Soledad Calvo — Candidata a Diputada · D6 (Partido Nacional Libertario)" />
+  <meta name="twitter:description" content="Candidata a diputada por el Partido Nacional Libertario en el Distrito 6. Prioridades y propuestas." />
   <meta name="twitter:image" content="/og-image.jpg" />
 
   <!-- Favicons -->
@@ -57,10 +61,10 @@
     .brand{display:flex; align-items:center; gap:12px}
 
     /* Bloque de isotipo según norma: isotipo SÍ puede ir solo; logotipo NO solo */
-    .logo-lockup{display:flex; align-items:center; gap:12px; padding:var(--safe); background:var(--paper); border-radius:12px; border:1px solid rgba(24,45,86,.15)}
-    .logo-lockup img{display:block; height:32px; width:auto; min-height:25px} /* tamaño mínimo web pequeño */
-    .logo-text{display:flex; flex-direction:column}
-    .logo-text small{color:var(--base); font-weight:400}
+    .logo-lockup{display:flex; align-items:center; gap:12px; padding:10px 12px; background:var(--paper); border-radius:12px; border:1px solid rgba(24,45,86,.15)}
+    .logo-lockup img{display:block; height:32px; width:auto; min-height:25px} /* tamaño mínimo web pequeño */ /* tamaño mínimo web pequeño */
+    .logo-text{display:none}/* reemplazado por label interno */
+    /* label interno maneja estilos */
 
     .links{display:flex; gap:12px; align-items:center}
     .btn{display:inline-flex; align-items:center; gap:8px; padding:12px 16px; border-radius:999px; font-weight:700; border:1px solid rgba(229,229,229,.25);}
@@ -76,7 +80,8 @@
     /* Hero */
     .hero{padding:72px 0 32px; text-align:center}
     .hero h1{font-size: clamp(32px, 6vw, 56px); line-height:1.05; margin:0 0 12px; letter-spacing:-.02em}
-    .hero p{margin:0 auto 20px; max-width:800px; color:var(--muted); font-size: clamp(16px, 2.5vw, 20px)}
+    .hero p{color:var(--base); font-size: clamp(16px, 2.5vw, 20px)}
+    .hero p strong{color:var(--primary)}
     .cta{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:16px}
 
     /* Cards / grid */
@@ -117,32 +122,45 @@
     footer{padding:40px 0; background:var(--primary); border-top:1px solid rgba(255,255,255,.15); color:var(--paper)}
     .small{font-size:12px}
     header, header a{color:var(--paper)}
+    /* Lockup interno: separador y textos */
+    .logo-sep{width:1px; height:28px; background:var(--accent); opacity:.9}
+    .logo-lockup .label{display:flex; flex-direction:column; line-height:1}
+    .logo-lockup .label strong{font-weight:700; color:var(--base); font-size:clamp(16px,2.2vw,18px)}
+    .logo-lockup .label small{color:var(--base); font-weight:400; font-size:12px}
+      /* Secciones rápidas (barra de atajos bajo el hero) */
+    .sections-nav{margin:16px auto 0; background:var(--paper); border:1px solid rgba(24,45,86,.15); border-radius:999px; padding:6px 12px; box-shadow:0 1px 0 rgba(0,0,0,.02)}
+    .sections-list{display:flex; justify-content:center; gap:0; flex-wrap:wrap; margin:0; padding:0}
+    .sections-list li{list-style:none; padding:6px 12px; display:flex; align-items:center}
+    .sections-list li + li{border-left:1px solid var(--accent); padding-left:14px; margin-left:6px}
+    .sections-list a{font-weight:700; color:var(--primary); font-size:14px}
+    .sections-list a.is-disabled{pointer-events:none; opacity:.6}
   </style>
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Soledad Calvo Herrera",
-    "url": "https://soledadcalvo.cl/",
-    "jobTitle": "Candidata a Diputada",
-    "address": {"@type":"PostalAddress","addressCountry":"CL"}
-  }
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Soledad Calvo",
+  "url": "https://soledadcalvo.cl/",
+  "jobTitle": "Candidata a Diputada",
+  "affiliation": { "@type": "Organization", "name": "Partido Nacional Libertario" },
+  "address": { "@type": "PostalAddress", "addressCountry": "CL" }
+}
+
   </script>
 </head>
 <body>
   <header>
     <div class="container nav">
       <a class="brand" href="#" aria-label="Inicio">
-        <!-- Isotipo del PNL dentro de bloque en blanco para respetar contraste y usos aprobados -->
-        <span class="logo-lockup" role="img" aria-label="Partido Nacional Libertario — isotipo">
-          <!-- Reemplaza por el archivo real cuando lo tengas -->
+        <span class="logo-lockup" role="img" aria-label="Partido Nacional Libertario — isotipo + texto de candidatura">
           <img src="/brand/pnl-isotipo.svg" alt="Isotipo PNL" height="32" />
+          <span class="logo-sep" aria-hidden="true"></span>
+          <span class="label">
+            <strong>Soledad Calvo</strong>
+            <small>Candidata a Diputada · Distrito 6</small>
+          </span>
         </span>
-        <div class="logo-text">
-          <strong>Soledad Calvo Herrera</strong>
-          <small>Distrito 6</small>
-        </div>
       </a>
       <nav class="links">
         <a class="btn btn-outline" href="#propuestas">Propuestas</a>
@@ -156,13 +174,24 @@
     <!-- HERO -->
     <section class="hero container safe" id="inicio">
       <span class="kicker">Distrito 6</span>
-      <h1>Soledad Calvo Herrera<br/>Candidata a Diputada</h1>
+      <h1>Soledad Calvo<br/>Candidata a Diputada</h1>
       <p>Una voz cercana y firme para avanzar en <strong>seguridad</strong>, <strong>empleo</strong> y <strong>servicios públicos dignos</strong>. Conoce las prioridades y súmate cuando activemos los formularios.</p>
       <div class="cta">
-        <a class="btn btn-accent" href="#propuestas">Ver propuestas</a>
+        <a class="btn btn-primary" href="#propuestas">Ver propuestas</a>
         <span class="chip" title="Funciones en preparación">🔒 Funciones en preparación</span>
       </div>
     </section>
+
+    <!-- SECCIONES RÁPIDAS -->
+    <nav class="container safe sections-nav" aria-label="Secciones principales">
+      <ul class="sections-list">
+        <li><a href="#prensa">Prensa</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a class="is-disabled" aria-disabled="true" title="Próximamente" href="#dona">Dona</a></li>
+      </ul>
+    </nav>
 
     <!-- PROPUESTAS CLAVE -->
     <section class="container safe" id="propuestas">
@@ -235,13 +264,14 @@
   <footer>
     <div class="container safe">
       <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap">
-        <span class="logo-lockup" role="img" aria-label="Partido Nacional Libertario — isotipo">
+        <span class="logo-lockup" role="img" aria-label="Partido Nacional Libertario — isotipo + texto de candidatura">
           <img src="/brand/pnl-isotipo.svg" alt="Isotipo PNL" height="28" />
+          <span class="logo-sep" aria-hidden="true"></span>
+          <span class="label">
+            <strong>Soledad Calvo</strong>
+            <small>Candidata a Diputada · Distrito 6</small>
+          </span>
         </span>
-        <div>
-          <strong>Soledad Calvo Herrera Herrera</strong>
-          <div class="small">Candidata a Diputada — Distrito 6</div>
-        </div>
       </div>
     </div>
   </footer>
