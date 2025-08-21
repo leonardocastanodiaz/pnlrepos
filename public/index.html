@@ -148,6 +148,23 @@
       object-fit: cover;
       object-position: 50% 30%; /* sube un poco el encuadre */
     }
+
+    /* Foto destacada — retrato 591×1280 */
+    .feature-photo{
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(24,45,86,.12);
+      background: var(--muted);
+      max-width: 140px;      /* ancho cómodo para un retrato alto */
+      margin: 8px auto 0;    /* centrada */
+    }
+    .feature-photo img{
+      display: block;
+      width: 100%;
+      height: auto;          /* SIN recorte, respeta el ratio */
+      aspect-ratio: 591 / 1280;
+    }
+
   </style>
 
   <script type="application/ld+json">
@@ -201,6 +218,7 @@
       <figure class="feature-photo">
         <img
           src="/img/soledad-calvo-d6.jpeg"
+          width="591" height="1280"
           alt="Soledad Calvo junto a dirigente del Partido Nacional Libertario en actividad"
           loading="lazy" decoding="async">
       </figure>
