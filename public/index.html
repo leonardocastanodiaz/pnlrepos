@@ -164,6 +164,17 @@
       height: auto;          /* SIN recorte, respeta el ratio */
       aspect-ratio: 591 / 1280;
     }
+    /* Foto como fondo del hero (40% de opacidad) */
+    .hero.has-bg{ position:relative; overflow:hidden; }
+    .hero.has-bg::before{
+      content:"";
+      position:absolute; inset:0;
+      background: url("/img/soledad-calvo-d6.jpg") center 20% / cover no-repeat;
+      opacity:.4;                 /* 40% */
+      z-index:0;                  /* detrás del contenido */
+    }
+    .hero.has-bg > *{ position:relative; z-index:1; } /* asegura texto encima */
+
 
   </style>
 
@@ -203,7 +214,7 @@
 
   <main>
     <!-- HERO -->
-    <section class="hero container safe" id="inicio">
+    <section class="hero container safe has-bg" id="inicio">
       <span class="kicker">Distrito 6</span>
       <h1>Soledad Calvo<br/>Candidata a Diputada</h1>
       <p>Una voz cercana y firme para avanzar en <strong>seguridad</strong>, <strong>empleo</strong> y <strong>servicios públicos dignos</strong>. Conoce las prioridades y súmate cuando activemos los formularios.</p>
