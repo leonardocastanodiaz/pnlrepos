@@ -82,6 +82,51 @@
         @media(min-width:680px){ .link-card{ grid-column:span 6; } }
         @media(min-width:980px){ .link-card{ grid-column:span 4; } }
 
+
+        /* Galería — carrusel institucional (scroll-snap, sin JS) */
+        .gallery{ position:relative; }
+        .gallery .slides{
+          display:flex; gap:12px; overflow-x:auto; -webkit-overflow-scrolling:touch;
+          scroll-snap-type:x mandatory; padding:6px 2px 10px;
+        }
+        .gallery .slide{
+          flex:0 0 90%; max-width:90%; scroll-snap-align:center;
+          border:1px solid rgba(24,45,86,.15); border-radius:var(--radius);
+          background:var(--paper); overflow:hidden;
+        }
+        @media (min-width:720px){ .gallery .slide{ flex-basis:70%; max-width:70%; } }
+        @media (min-width:1024px){ .gallery .slide{ flex-basis:60%; max-width:60%; } }
+
+        .gallery .media{
+          width:100%; height:clamp(220px, 45vw, 420px);
+          object-fit:cover; object-position:50% 30%; display:block;
+        }
+        .gallery .caption{
+          display:flex; align-items:center; gap:12px; justify-content:space-between;
+          padding:10px 12px; border-top:1px solid rgba(24,45,86,.08);
+        }
+        .gallery .caption strong{ color:var(--primary); }
+        .gallery .actions{ display:flex; gap:8px; }
+        .gallery .btn-download{
+          display:inline-flex; align-items:center; gap:8px;
+          padding:8px 12px; border-radius:999px; font-weight:700;
+          background:transparent; color:var(--primary);
+          border:1px solid rgba(24,45,86,.35);
+        }
+        .gallery .btn-download:hover{ transform:translateY(-1px); }
+        .gallery .dots{
+          display:flex; gap:6px; justify-content:center; margin-top:10px;
+        }
+        .gallery .dot{
+          width:8px; height:8px; border-radius:50%;
+          background:rgba(24,45,86,.25); display:inline-block;
+        }
+        .gallery .dot[aria-current="true"]{ background:var(--primary); }
+
+        /* que el ancla no quede tapada por el header */
+        section[id]{ scroll-margin-top:84px; }
+
+
         </style>
         <script type="application/ld+json">
 {
@@ -122,6 +167,8 @@
             <!-- SECCIONES RÁPIDAS -->
             <nav class="container safe sections-nav" aria-label="Secciones principales">
                 <ul class="sections-list">
+                    <li><a href="#biografia">Biografía</a>
+                    </li>
                     <li><a href="#galeria">Galería</a>
                     </li>
                     <li><a href="#links">Links</a>
@@ -200,6 +247,65 @@
                 </form>
             </section> -->
             <!-- LINKS (al final de la página) -->
+            <!-- GALERÍA -->
+            <section class="container safe" id="galeria">
+              <span class="kicker">Galería</span>
+              <h2>Fotos de prensa</h2>
+
+              <div class="gallery" aria-label="Carrusel de fotos">
+                <div class="slides">
+                  <!-- Slide 1 -->
+                  <article class="slide" id="galeria-1">
+                    <img class="media"
+                        src="/img/soledad-calvo-d6.jpg"
+                        alt="Soledad Calvo en actividad de campaña, retrato vertical recortado a banner">
+                    <div class="caption">
+                      <strong>Retrato campaña</strong>
+                      <div class="actions">
+                        <a class="btn-download" href="/img/soledad-calvo-d6.jpg" download>Descargar</a>
+                      </div>
+                    </div>
+                  </article>
+
+                  <!-- Slide 2 (ejemplo, reutiliza misma foto por ahora) -->
+                  <article class="slide" id="galeria-2">
+                    <img class="media"
+                        src="/img/soledad-calvo-d6.jpg"
+                        alt="Soledad Calvo, encuadre alternativo">
+                    <div class="caption">
+                      <strong>Encuadre alternativo</strong>
+                      <div class="actions">
+                        <a class="btn-download" href="/img/soledad-calvo-d6.jpg" download>Descargar</a>
+                      </div>
+                    </div>
+                  </article>
+
+                  <!-- Slide 3 (ejemplo) -->
+                  <article class="slide" id="galeria-3">
+                    <img class="media"
+                        src="/img/soledad-calvo-d6.jpg"
+                        alt="Soledad Calvo en terreno">
+                    <div class="caption">
+                      <strong>En terreno</strong>
+                      <div class="actions">
+                        <a class="btn-download" href="/img/soledad-calvo-d6.jpg" download>Descargar</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Puntos (opcional; marca el primero como activo) -->
+                <div class="dots" aria-hidden="true">
+                  <a class="dot" href="#galeria-1" aria-current="true"></a>
+                  <a class="dot" href="#galeria-2"></a>
+                  <a class="dot" href="#galeria-3"></a>
+                </div>
+              </div>
+            </section>
+
+
+
+
             <section class="container safe" id="links"><span class="kicker"><b>Links</b></span>
                 <h2>Enlaces útiles</h2>
                 <div class="links-grid"><a class="link-card" href="#biografia"> <span class="icon">🧾</span> <div class="meta"><strong>Biografía</strong>
@@ -217,21 +323,21 @@
                         </div> <span class="chip">Ver</span> </a><a class="link-card is-disabled" href="#" aria-disabled="true" title="Próximamente"> <span class="icon">🔎</span> <div class="meta"><strong>Transparencia</strong>
                             <div class="desc">Gastos de campaña</div>
                         </div> <span class="chip">Pronto</span> </a>
-                </div>
+                    </div>
             </section>
-        </main>
-        <!-- BIOGRAFÍA -->
-        <section class="container safe" id="biografia"><span class="kicker"><b>Biografía</b></span>
-            <h2>Conócela</h2>
-            <article class="bio">
-                <p>Candidata emergente, que surge desde la ciudadanía y no desde la casta política tradicional. Representa una nueva forma de hacer política: más cercana, transparente y comprometida con las personas.</p>
-                <p>Madre, esposa y hermana, una persona de familia con valores cristianos que inspiran su trabajo y sus decisiones. Su experiencia de vida en el extranjero le permitió adquirir una mirada amplia e intercultural, además del dominio del inglés, lo que fortalece su capacidad de diálogo y conexión con diversas realidades.</p>
-                <p>Profesional del área de la salud, con estudios de postgrado y experiencia en docencia universitaria, combina preparación académica con vocación de servicio. A lo largo de su vida ha demostrado ser una mujer disciplinada, responsable y comprometida con su comunidad.</p>
-                <p>El octubrismo la llevó a trasladarse con su familia a Olmué, donde hoy emprende con un negocio online dedicado al fitness, demostrando su capacidad de resiliencia, adaptación y liderazgo en nuevos desafíos.</p>
-                <p>Consciente de la necesidad de abrir espacios de diálogo y análisis, creó un canal de opinión para abordar temas poco conocidos, cuestionar ideas y sacar a la luz verdades relevantes, promoviendo reflexión y debate sobre asuntos actuales que impactan a la comunidad.</p>
-                <p>Hoy se presenta como una alternativa nueva y diferente, con la firme convicción de aportar a una política más humana y conectada con las verdaderas necesidades de la gente.</p>
-            </article>
-        </section>
+            </main>
+            <!-- BIOGRAFÍA -->
+            <section class="container safe" id="biografia"><span class="kicker"><b>Biografía</b></span>
+                <h2>Conócela</h2>
+                <article class="bio">
+                    <p>Candidata emergente, que surge desde la ciudadanía y no desde la casta política tradicional. Representa una nueva forma de hacer política: más cercana, transparente y comprometida con las personas.</p>
+                    <p>Madre, esposa y hermana, una persona de familia con valores cristianos que inspiran su trabajo y sus decisiones. Su experiencia de vida en el extranjero le permitió adquirir una mirada amplia e intercultural, además del dominio del inglés, lo que fortalece su capacidad de diálogo y conexión con diversas realidades.</p>
+                    <p>Profesional del área de la salud, con estudios de postgrado y experiencia en docencia universitaria, combina preparación académica con vocación de servicio. A lo largo de su vida ha demostrado ser una mujer disciplinada, responsable y comprometida con su comunidad.</p>
+                    <p>El octubrismo la llevó a trasladarse con su familia a Olmué, donde hoy emprende con un negocio online dedicado al fitness, demostrando su capacidad de resiliencia, adaptación y liderazgo en nuevos desafíos.</p>
+                    <p>Consciente de la necesidad de abrir espacios de diálogo y análisis, creó un canal de opinión para abordar temas poco conocidos, cuestionar ideas y sacar a la luz verdades relevantes, promoviendo reflexión y debate sobre asuntos actuales que impactan a la comunidad.</p>
+                    <p>Hoy se presenta como una alternativa nueva y diferente, con la firme convicción de aportar a una política más humana y conectada con las verdaderas necesidades de la gente.</p>
+                </article>
+            </section>
         <footer>
             <div class="container safe">
                 <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap">
