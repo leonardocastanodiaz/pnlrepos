@@ -165,15 +165,56 @@
       aspect-ratio: 591 / 1280;
     }
     /* Foto como fondo del hero (40% de opacidad) */
-    .hero.has-bg{ position:relative; overflow:hidden; }
+    /* Foto como fondo del hero (overlay ~40%) */
+    .hero.has-bg{
+      position: relative;
+      overflow: hidden;
+      min-height: clamp(320px, 45vw, 520px); /* asegura área para ver el fondo */
+    }
+    .hero.has-bg::before{
+      content: "";
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(rgba(27,25,26,.40), rgba(27,25,26,.40)), /* oscurece ~40% */
+        url("./img/soledad-calvo-d6.jpg") center 20% / cover no-repeat;
+      z-index: 0;  /* detrás del contenido */
+    }
+    .hero.has-bg > *{
+      position: relative;
+      z-index: 1;  /* texto por encima de la imagen */
+    }
+
+    /* Hero con fondo a todo el ancho + overlay 50% */
+    .hero.has-bg{
+      position: relative;
+      overflow: hidden;
+      min-height: clamp(360px, 48vw, 600px);
+    }
     .hero.has-bg::before{
       content:"";
-      position:absolute; inset:0;
-      background: url("/img/soledad-calvo-d6.jpg") center 20% / cover no-repeat;
-      opacity:.4;                 /* 40% */
-      z-index:0;                  /* detrás del contenido */
+      position:absolute;
+      top:0; left:50%;
+      width:90vw;           /* ocupa todo el ancho de la ventana */
+      height:100%;
+      transform:translateX(-50%); /* centra respecto al viewport */
+      background:
+        linear-gradient(rgba(27,25,26,.50), rgba(27,25,26,.50)), /* 50% */
+        url("/img/soledad-calvo-d6.jpg");  /* usa la extensión y ruta correctas */
+      background-position:center 5%;
+      background-size:cover;
+      background-repeat:no-repeat;
+      z-index:0;
     }
-    .hero.has-bg > *{ position:relative; z-index:1; } /* asegura texto encima */
+    .hero.has-bg > *{
+      position:relative;
+      z-index:1; /* contenido encima del fondo */
+    }
+
+/* (Opcional) Si el texto se ve oscuro sobre la foto, descomenta:
+.hero.has-bg, .hero.has-bg h1, .hero.has-bg p { color:#fff; }
+.hero.has-bg .btn-primary{ background:#FBA931; color:#1B191A; } 
+*/
+
 
 
   </style>
@@ -214,7 +255,7 @@
 
   <main>
     <!-- HERO -->
-    <section class="hero container safe has-bg" id="inicio">
+    <section class="hero container safe" id="inicio">
       <span class="kicker">Distrito 6</span>
       <h1>Soledad Calvo<br/>Candidata a Diputada</h1>
       <p>Una voz cercana y firme para avanzar en <strong>seguridad</strong>, <strong>empleo</strong> y <strong>servicios públicos dignos</strong>. Conoce las prioridades y súmate cuando activemos los formularios.</p>
@@ -224,16 +265,6 @@
       </div>
     </section>
 
-    <!-- FOTO DESTACADA -->
-    <section class="container safe" id="foto-destacada">
-      <figure class="feature-photo">
-        <img
-          src="/img/soledad-calvo-d6.jpeg"
-          width="591" height="1280"
-          alt="Soledad Calvo junto a dirigente del Partido Nacional Libertario en actividad"
-          loading="lazy" decoding="async">
-      </figure>
-    </section>
 
 
     <!-- SECCIONES RÁPIDAS -->
@@ -246,6 +277,18 @@
         <li><a class="is-disabled" aria-disabled="true" title="Próximamente" href="#dona">Dona</a></li>
       </ul>
     </nav>
+
+    <!-- FOTO DESTACADA -->
+    <section class="container safe" id="foto-destacada">
+      <figure class="feature-photo">
+        <img
+          src="/img/soledad-calvo-d6.jpg"
+          width="591" height="1280"
+          alt="Soledad Calvo junto a dirigente del Partido Nacional Libertario en actividad"
+          loading="lazy" decoding="async">
+      </figure>
+    </section>
+
 
     <!-- PROPUESTAS CLAVE -->
     <section class="container safe" id="propuestas">
