@@ -1,226 +1,134 @@
 <!doctype html>
 <html lang="es-CL">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Soledad Calvo — Candidata a Diputada · Distrito 6 (Partido Nacional Libertario)</title>
-
-  <meta name="description" content="Sitio oficial de Soledad Calvo, candidata a diputada por el Partido Nacional Libertario en el Distrito 6. Conoce prioridades, propuestas y próximos pasos de campaña." />
-  <link rel="canonical" href="https://soledadcalvo.cl/" />
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Soledad Calvo — Candidata a Diputada · D6 (Partido Nacional Libertario)" />
-  <meta property="og:description" content="Candidata a diputada por el Partido Nacional Libertario en el Distrito 6. Prioridades y propuestas." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://soledadcalvo.cl/" />
-  <meta property="og:image" content="/og-image.jpg" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Soledad Calvo — Candidata a Diputada · D6 (Partido Nacional Libertario)" />
-  <meta name="twitter:description" content="Candidata a diputada por el Partido Nacional Libertario en el Distrito 6. Prioridades y propuestas." />
-  <meta name="twitter:image" content="/og-image.jpg" />
-
-  <!-- Favicons -->
-  <link rel="icon" href="/favicon.ico" />
-
-  <!-- Tipografía según norma (Roboto) -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
-  <style>
-    /* Paleta oficial PNL (ecosistema cromático) */
-    :root{
-      --base:#1B191A;   /* fondo principal */
-      --primary:#182D56;/* azul institucional */
-      --accent:#FBA931; /* acento */
-      --paper:#FFFFFF;  /* blanco */
-      --muted:#E5E5E5;  /* gris claro */
-      --text:#1B191A;   /* texto sobre base oscura */
-      --radius:14px;
-      --safe: clamp(12px, 3vw, 24px); /* margen de seguridad para logo/elementos */
-    }
-
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; font-family: 'Roboto', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      font-weight:300; /* Roboto Light por norma */
-      color:var(--text);
-      background:
-        radial-gradient(40vw 40vw at 15% -10%, rgba(24,45,86,.18), transparent 60%),
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Soledad Calvo — Candidata a Diputada · Distrito 6 (Partido Nacional Libertario)</title>
+        <meta name="description" content="Sitio oficial de Soledad Calvo, candidata a diputada por el Partido Nacional Libertario en el Distrito 6. Conoce prioridades, propuestas y próximos pasos de campaña."/>
+        <link rel="canonical" href="https://soledadcalvo.cl/"/>
+        <!-- Open Graph / Twitter -->
+        <meta property="og:title" content="Soledad Calvo — Candidata a Diputada · D6 (Partido Nacional Libertario)"/>
+        <meta property="og:description" content="Candidata a diputada por el Partido Nacional Libertario en el Distrito 6. Prioridades y propuestas."/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://soledadcalvo.cl/"/>
+        <meta property="og:image" content="/og-image.jpg"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="Soledad Calvo — Candidata a Diputada · D6 (Partido Nacional Libertario)"/>
+        <meta name="twitter:description" content="Candidata a diputada por el Partido Nacional Libertario en el Distrito 6. Prioridades y propuestas."/>
+        <meta name="twitter:image" content="/og-image.jpg"/>
+        <!-- Favicons -->
+        <link rel="icon" href="/favicon.ico"/>
+        <!-- Tipografía según norma (Roboto) -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <style>/* Paleta oficial PNL (ecosistema cromático) */:root { --base: #1B191A;  /* fondo principal */ --primary: #182D56;  /* azul institucional */ --accent: #FBA931;  /* acento */ --paper: #FFFFFF;  /* blanco */ --muted: #E5E5E5;  /* gris claro */ --text: #1B191A;  /* texto sobre base oscura */ --radius: 14px; --safe: clamp(12px, 3vw, 24px);  /* margen de seguridad para logo/elementos */ } * { box-sizing: border-box; } html, body { height: 100%; } body { margin: 0; font-family: 'Roboto', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; font-weight: 300;  /* Roboto Light por norma */ color: var(--text); background: radial-gradient(40vw 40vw at 15% -10%, rgba(24,45,86,.18), transparent 60%),
         radial-gradient(40vw 40vw at 85% -10%, rgba(251,169,49,.12), transparent 60%),
-        linear-gradient(to bottom, var(--muted) 0%, var(--paper) 60%);
-    }
-    h1,h2,h3,strong{font-weight:700}
-    a{color:inherit; text-decoration:none}
-    .container{max-width:1080px; margin-inline:auto; padding:24px}
+        linear-gradient(to bottom, var(--muted) 0%, var(--paper) 60%); } h1, h2, h3, strong { font-weight: 700; } a { color: inherit; text-decoration: none; } .container { max-width: 1080px; margin-inline: auto; padding: 24px; } /* Header */header { position: sticky; top: 0; backdrop-filter: saturate(180%) blur(8px); background: var(--primary); border-bottom: 3px solid var(--accent); z-index: 30; } .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; } .brand { display: flex; align-items: center; gap: 12px; } /* Bloque de isotipo según norma: isotipo SÍ puede ir solo; logotipo NO solo */.logo-lockup { display: flex; align-items: center; gap: 12px; padding: 10px 12px; background: var(--paper); border-radius: 12px; border: 1px solid rgba(24,45,86,.15); } .logo-lockup img { display: block; height: 32px; width: auto; min-height: 25px; } /* tamaño mínimo web pequeño *//* tamaño mínimo web pequeño */.logo-text { display: none; } /* reemplazado por label interno *//* label interno maneja estilos */.links { display: flex; gap: 12px; align-items: center; } .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 16px; border-radius: 999px; font-weight: 700; border: 1px solid rgba(229,229,229,.25); } .btn:hover { transform: translateY(-1px); } .btn-primary { background: var(--primary); color: var(--paper); border-color: transparent; } .btn-outline { background: transparent; color: var(--primary); border-color: rgba(24,45,86,.5); } .btn-accent { background: var(--accent); color: #1b191a; border-color: transparent; } /* Estado desactivado (visual, sin interacción) */.is-disabled { opacity: .55; filter: saturate(.6) grayscale(.08); cursor: not-allowed; pointer-events: none; } .chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 6px 10px; border-radius: 999px; border: 1px solid var(--accent); color: var(--primary); } /* Hero */.hero { padding: 72px 0 32px; text-align: center; } .hero h1 { font-size: clamp(32px, 6vw, 56px); line-height: 1.05; margin: 0 0 12px; letter-spacing: -.02em; } .hero p { color: var(--base); font-size: clamp(16px, 2.5vw, 20px); } .hero p strong { color: var(--primary); } .cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 16px; } /* Cards / grid */.grid { display: grid; grid-template-columns: repeat(12,1fr); gap: 20px; } .card { grid-column: span 12; background: var(--paper); border: 1px solid rgba(229,229,229,.12); padding: 20px; border-radius: var(--radius); position: relative; } .card h3 { margin: 0 0 6px; color: var(--primary); } .card p { margin: 0; color: var(--text); } @media (min-width:720px){ .card {  grid-column: span 4; } } section { padding: 28px 0; } .kicker { display: inline-block; text-transform: uppercase; letter-spacing: .12em; font-size: 12px; color: var(--accent); margin-bottom: 8px; } h2 { margin: 0 0 8px; font-size: clamp(22px,3.6vw,32px); } .form { display: grid; gap: 12px; max-width: 720px; } .row { display: grid; gap: 12px; } @media (min-width:680px){ .row {  grid-template-columns: 1fr 1fr; } } label { font-size: 14px; } input, select, textarea { width: 100%; padding: 12px 14px; background: var(--muted); color: var(--text); border: 1px solid rgba(229,229,229,.25); border-radius: 10px; outline: none; } input:focus, textarea:focus, select:focus { border-color: var(--accent); } .note { color: var(--muted); font-size: 13px; } /* Secciones desactivadas con overlay "Próximamente" */.section-disabled { position: relative; } .section-disabled::after { content: "Próximamente"; position: absolute; top: 16px; right: 16px; font-size: 12px; letter-spacing: .06em; background: rgba(251,169,49,.15); color: var(--paper); border: 1px solid rgba(251,169,49,.35); padding: 6px 10px; border-radius: 999px; } .masked { mask-image: linear-gradient(to bottom, var(--paper) 70%, transparent 100%); } /* Márgenes de seguridad para logo / composición (norma de márgenes) */.safe { padding: var(--safe); } footer { padding: 40px 0; background: var(--primary); border-top: 1px solid rgba(255,255,255,.15); color: var(--paper); } .small { font-size: 12px; } header, header a { color: var(--paper); } /* Lockup interno: separador y textos */.logo-sep { width: 1px; height: 28px; background: var(--accent); opacity: .9; } .logo-lockup .label { display: flex; flex-direction: column; line-height: 1; } .logo-lockup .label strong { font-weight: 700; color: var(--base); font-size: clamp(16px,2.2vw,18px); } .logo-lockup .label small { color: var(--base); font-weight: 400; font-size: 12px; } /* Secciones rápidas (barra de atajos bajo el hero) */.sections-nav { margin: 16px auto 0; background: var(--paper); border: 1px solid rgba(24,45,86,.15); border-radius: 999px; padding: 6px 12px; box-shadow: 0 1px 0 rgba(0,0,0,.02); } .sections-list { display: flex; justify-content: center; gap: 0; flex-wrap: wrap; margin: 0; padding: 0; } .sections-list li { list-style: none; padding: 6px 12px; display: flex; align-items: center; } .sections-list li + li { border-left: 1px solid var(--accent); padding-left: 14px; margin-left: 6px; } .sections-list a { font-weight: 700; color: var(--primary); font-size: 14px; } .sections-list a.is-disabled { pointer-events: none; opacity: .6; } /* Foto destacada */.feature-photo { border-radius: var(--radius); overflow: hidden; border: 1px solid rgba(24,45,86,.12); background: var(--muted); } .feature-photo img { display: block; width: 100%; height: clamp(220px, 45vw, 440px);  /* recorte elegante para foto vertical */ object-fit: cover; object-position: 50% 30%;  /* sube un poco el encuadre */ } /* Foto destacada — retrato 591×1280 */.feature-photo { border-radius: var(--radius); overflow: hidden; border: 1px solid rgba(24,45,86,.12); background: var(--muted); max-width: 500px;  /* ancho cómodo para un retrato alto */ margin: 8px auto 0;  /* centrada */ } .feature-photo img { display: block; width: 100%; height: auto;  /* SIN recorte, respeta el ratio */ aspect-ratio: 591 / 472; } /* Foto como fondo del hero (40% de opacidad) *//* Foto como fondo del hero (overlay ~40%) */.hero.has-bg { position: relative; overflow: hidden; min-height: clamp(320px, 45vw, 520px);  /* asegura área para ver el fondo */ } .hero.has-bg::before { content: ""; position: absolute; inset: 0; background: linear-gradient(rgba(27,25,26,.40), rgba(27,25,26,.40)), /* oscurece ~40% */
+        url("./img/soledad-calvo-d6.jpg") center 20% / cover no-repeat; z-index: 0;  /* detrás del contenido */ } .hero.has-bg > * { position: relative; z-index: 1;  /* texto por encima de la imagen */ } /* Hero con fondo a todo el ancho + overlay 50% */.hero.has-bg { position: relative; overflow: hidden; min-height: clamp(360px, 48vw, 600px); } .hero.has-bg::before { content: ""; position: absolute; top: 0; left: 50%; width: 90vw;  /* ocupa todo el ancho de la ventana */ height: 100%; transform: translateX(-50%);  /* centra respecto al viewport */ background: linear-gradient(rgba(27,25,26,.50), rgba(27,25,26,.50)), /* 50% */
+        url("/img/soledad-calvo-d6.jpg");  /* usa la extensión y ruta correctas */ background-position: center 5%; background-size: cover; background-repeat: no-repeat; z-index: 0; } .hero.has-bg > * { position: relative; z-index: 1;  /* contenido encima del fondo */ } /* (Opcional) Si el texto se ve oscuro sobre la foto, descomenta:
+        /* Sección Links (responsive y accesible) */.links-grid { display: grid; grid-template-columns: repeat(12,1fr); gap: 12px; margin-top: 12px; } .link-card { grid-column: span 12; display: flex; align-items: center; gap: 12px; padding: 14px 16px; background: var(--paper); border: 1px solid rgba(24,45,86,.15); border-radius: var(--radius); transition: transform .12s ease, box-shadow .12s ease; } .link-card:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(0,0,0,.06); } .link-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; } .link-card .icon { width: 28px; height: 28px; display: grid; place-items: center; border-radius: 8px; background: rgba(24,45,86,.08); color: var(--primary); font-size: 16px; flex: 0 0 28px; } .link-card .meta { flex: 1; min-width: 0; } .link-card strong { color: var(--primary); } .link-card .desc { color: var(--text); opacity: .75; font-size: 12px; } .link-card .chip { margin-left: auto; } /* reutiliza tu .chip existente */.link-card.is-disabled { pointer-events: none; opacity: .6; } @media (min-width:680px){ .link-card {  grid-column: span 6; } } @media (min-width:980px){ .link-card {  grid-column: span 4; } } /* Que los anchors no queden tapados por el header sticky */section[id] { scroll-margin-top: 84px; } .hero.has-bg, .hero.has-bg h1, .hero.has-bg p { color: #fff; } .hero.has-bg .btn-primary { background: #FBA931; color: #1B191A; } */.hero .kicker { color: var(--base); } /* #1B191A (negro de marca) *//* Sección Links (responsive) */.links-grid { display: grid; grid-template-columns: repeat(12,1fr); gap: 12px; margin-top: 12px; } .link-card { grid-column: span 12; display: flex; align-items: center; gap: 12px; padding: 14px 16px; background: var(--paper); border: 1px solid rgba(24,45,86,.15); border-radius: var(--radius); transition: transform .12s ease, box-shadow .12s ease; } .link-card:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(0,0,0,.06); } .link-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; } .link-card .icon { width: 28px; height: 28px; display: grid; place-items: center; border-radius: 8px; background: rgba(24,45,86,.08); color: var(--primary); font-size: 16px; flex: 0 0 28px; } .link-card .meta { flex: 1; min-width: 0; } .link-card strong { color: var(--primary); } .link-card .desc { color: var(--text); opacity: .75; font-size: 12px; } .link-card .chip { margin-left: auto; } .link-card.is-disabled { pointer-events: none; opacity: .6; } @media (min-width:680px){ .link-card {  grid-column: span 6; } } @media (min-width:980px){ .link-card {  grid-column: span 4; } } /* que los anchors no queden bajo el header sticky */section[id] { scroll-margin-top: 84px; } /* Biografía (contenedor legible y responsive) */.bio { background: var(--paper); border: 1px solid rgba(24,45,86,.15); border-radius: var(--radius); padding: 18px 20px; line-height: 1.6; color: var(--text); max-width: 820px; margin: 12px auto 0; } .bio p { margin: 0 0 12px; } @media (min-width:720px){ .bio {  padding: 22px 24px; } } /* Que los anchors no queden bajo el header sticky (por si no lo tienes ya) */section[id] { scroll-margin-top: 84px; }
+        /* LINKS — estilo institucional PNL (sobrio y corporativo) */
+        #links .kicker{ color: var(--primary); font-weight:700; }    /* título de sección consistente */
 
-    /* Header */
-    header{position:sticky; top:0; backdrop-filter:saturate(180%) blur(8px); background:var(--primary); border-bottom:3px solid var(--accent); z-index:30}
-    .nav{display:flex; align-items:center; justify-content:space-between; gap:16px}
-    .brand{display:flex; align-items:center; gap:12px}
+        .links-grid{ gap:8px; }                                      /* espacio más fino */
 
-    /* Bloque de isotipo según norma: isotipo SÍ puede ir solo; logotipo NO solo */
-    .logo-lockup{display:flex; align-items:center; gap:12px; padding:10px 12px; background:var(--paper); border-radius:12px; border:1px solid rgba(24,45,86,.15)}
-    .logo-lockup img{display:block; height:32px; width:auto; min-height:25px} /* tamaño mínimo web pequeño */ /* tamaño mínimo web pequeño */
-    .logo-text{display:none}/* reemplazado por label interno */
-    /* label interno maneja estilos */
+        .link-card{
+          grid-column: span 12;
+          display:flex; align-items:center; gap:12px;
+          padding:12px 14px;
+          background: var(--paper);
+          border:1px solid rgba(24,45,86,.18);
+          border-radius:12px;
+          box-shadow:none;
+          transform:none;
+          transition: border-color .12s ease, background .12s ease;
+        }
+        .link-card:hover{
+          border-color: var(--accent);
+          background: linear-gradient(0deg, rgba(251,169,49,.03), rgba(251,169,49,.03));
+        }
 
-    .links{display:flex; gap:12px; align-items:center}
-    .btn{display:inline-flex; align-items:center; gap:8px; padding:12px 16px; border-radius:999px; font-weight:700; border:1px solid rgba(229,229,229,.25);}
-    .btn:hover{transform:translateY(-1px)}
-    .btn-primary{background:var(--primary); color:var(--paper); border-color:transparent}
-    .btn-outline{background:transparent; color:var(--primary); border-color:rgba(24,45,86,.5)}
-    .btn-accent{background:var(--accent); color:#1b191a; border-color:transparent}
+        /* Icono minimal (oculta el emoji y muestra punto de acento) */
+        .link-card .icon{
+          width:14px; height:14px; flex:0 0 14px;
+          border-radius:50%;
+          background: var(--accent);
+          font-size:0; line-height:0;           /* oculta el emoji */
+          display:inline-block;
+        }
 
-    /* Estado desactivado (visual, sin interacción) */
-    .is-disabled{opacity:.55; filter:saturate(.6) grayscale(.08); cursor:not-allowed; pointer-events:none}
-    .chip{display:inline-flex; align-items:center; gap:6px; font-size:12px; padding:6px 10px; border-radius:999px; border:1px solid var(--accent); color:var(--primary)}
+        /* Tipos y colores sobrios */
+        .link-card strong{ color: var(--primary); font-weight:700; }
+        .link-card .desc{ color: var(--base); opacity:.65; font-size:12px; }
 
-    /* Hero */
-    .hero{padding:72px 0 32px; text-align:center}
-    .hero h1{font-size: clamp(32px, 6vw, 56px); line-height:1.05; margin:0 0 12px; letter-spacing:-.02em}
-    .hero p{color:var(--base); font-size: clamp(16px, 2.5vw, 20px)}
-    .hero p strong{color:var(--primary)}
-    .cta{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:16px}
+        /* Flecha discreta a la derecha, reemplaza el “chip” */
+        .link-card .chip{ display:none; }
+        .link-card::after{
+          content: "›";
+          margin-left:auto;
+          font-size:18px;
+          color: var(--primary);
+          opacity:.6;
+        }
 
-    /* Cards / grid */
-    .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:20px}
-    .card{grid-column: span 12; background:var(--paper); border:1px solid rgba(229,229,229,.12); padding:20px; border-radius:var(--radius); position:relative}
-    .card h3{margin:0 0 6px; color:var(--primary)}
-    .card p{margin:0; color:var(--text)}
-    @media(min-width:720px){ .card{grid-column:span 4} }
+        /* Estados deshabilitados */
+        .link-card.is-disabled{
+          pointer-events:none;
+          background: var(--muted);
+          border-color: rgba(24,45,86,.12);
+          color: var(--base);
+        }
+        .link-card.is-disabled::after{ opacity:.25; }
 
-    section{padding:28px 0}
-    .kicker{display:inline-block; text-transform:uppercase; letter-spacing:.12em; font-size:12px; color:var(--accent); margin-bottom:8px}
-    h2{margin:0 0 8px; font-size: clamp(22px,3.6vw,32px)}
-
-    .form{display:grid; gap:12px; max-width:720px}
-    .row{display:grid; gap:12px}
-    @media(min-width:680px){ .row{grid-template-columns:1fr 1fr} }
-    label{font-size:14px}
-    input, select, textarea{
-      width:100%; padding:12px 14px; background:var(--muted); color:var(--text);
-      border:1px solid rgba(229,229,229,.25); border-radius:10px; outline:none;
-    }
-    input:focus,textarea:focus,select:focus{border-color:var(--accent)}
-    .note{color:var(--muted); font-size:13px}
-
-    /* Secciones desactivadas con overlay "Próximamente" */
-    .section-disabled{position:relative}
-    .section-disabled::after{
-      content:"Próximamente";
-      position:absolute; top:16px; right:16px; font-size:12px; letter-spacing:.06em;
-      background:rgba(251,169,49,.15); color:var(--paper); border:1px solid rgba(251,169,49,.35);
-      padding:6px 10px; border-radius:999px;
-    }
-    .masked{mask-image: linear-gradient(to bottom, var(--paper) 70%, transparent 100%)}
-
-    /* Márgenes de seguridad para logo / composición (norma de márgenes) */
-    .safe{padding:var(--safe)}
-
-    footer{padding:40px 0; background:var(--primary); border-top:1px solid rgba(255,255,255,.15); color:var(--paper)}
-    .small{font-size:12px}
-    header, header a{color:var(--paper)}
-    /* Lockup interno: separador y textos */
-    .logo-sep{width:1px; height:28px; background:var(--accent); opacity:.9}
-    .logo-lockup .label{display:flex; flex-direction:column; line-height:1}
-    .logo-lockup .label strong{font-weight:700; color:var(--base); font-size:clamp(16px,2.2vw,18px)}
-    .logo-lockup .label small{color:var(--base); font-weight:400; font-size:12px}
-      /* Secciones rápidas (barra de atajos bajo el hero) */
-    .sections-nav{margin:16px auto 0; background:var(--paper); border:1px solid rgba(24,45,86,.15); border-radius:999px; padding:6px 12px; box-shadow:0 1px 0 rgba(0,0,0,.02)}
-    .sections-list{display:flex; justify-content:center; gap:0; flex-wrap:wrap; margin:0; padding:0}
-    .sections-list li{list-style:none; padding:6px 12px; display:flex; align-items:center}
-    .sections-list li + li{border-left:1px solid var(--accent); padding-left:14px; margin-left:6px}
-    .sections-list a{font-weight:700; color:var(--primary); font-size:14px}
-    .sections-list a.is-disabled{pointer-events:none; opacity:.6}
-    /* Foto destacada */
-    .feature-photo{
-      border-radius: var(--radius);
-      overflow: hidden;
-      border: 1px solid rgba(24,45,86,.12);
-      background: var(--muted);
-    }
-    .feature-photo img{
-      display:block;
-      width:100%;
-      height: clamp(220px, 45vw, 440px); /* recorte elegante para foto vertical */
-      object-fit: cover;
-      object-position: 50% 30%; /* sube un poco el encuadre */
-    }
-
-    /* Foto destacada — retrato 591×1280 */
-    .feature-photo{
-      border-radius: var(--radius);
-      overflow: hidden;
-      border: 1px solid rgba(24,45,86,.12);
-      background: var(--muted);
-      max-width: 500px;      /* ancho cómodo para un retrato alto */
-      margin: 8px auto 0;    /* centrada */
-    }
-    .feature-photo img{
-      display: block;
-      width: 100%;
-      height: auto;          /* SIN recorte, respeta el ratio */
-      aspect-ratio: 591 / 472;
-    }
-    /* Foto como fondo del hero (40% de opacidad) */
-    /* Foto como fondo del hero (overlay ~40%) */
-    .hero.has-bg{
-      position: relative;
-      overflow: hidden;
-      min-height: clamp(320px, 45vw, 520px); /* asegura área para ver el fondo */
-    }
-    .hero.has-bg::before{
-      content: "";
-      position: absolute; inset: 0;
-      background:
-        linear-gradient(rgba(27,25,26,.40), rgba(27,25,26,.40)), /* oscurece ~40% */
-        url("./img/soledad-calvo-d6.jpg") center 20% / cover no-repeat;
-      z-index: 0;  /* detrás del contenido */
-    }
-    .hero.has-bg > *{
-      position: relative;
-      z-index: 1;  /* texto por encima de la imagen */
-    }
-
-    /* Hero con fondo a todo el ancho + overlay 50% */
-    .hero.has-bg{
-      position: relative;
-      overflow: hidden;
-      min-height: clamp(360px, 48vw, 600px);
-    }
-    .hero.has-bg::before{
-      content:"";
-      position:absolute;
-      top:0; left:50%;
-      width:90vw;           /* ocupa todo el ancho de la ventana */
-      height:100%;
-      transform:translateX(-50%); /* centra respecto al viewport */
-      background:
-        linear-gradient(rgba(27,25,26,.50), rgba(27,25,26,.50)), /* 50% */
-        url("/img/soledad-calvo-d6.jpg");  /* usa la extensión y ruta correctas */
-      background-position:center 5%;
-      background-size:cover;
-      background-repeat:no-repeat;
-      z-index:0;
-    }
-    .hero.has-bg > *{
-      position:relative;
-      z-index:1; /* contenido encima del fondo */
-    }
-
-/* (Opcional) Si el texto se ve oscuro sobre la foto, descomenta:
-.hero.has-bg, .hero.has-bg h1, .hero.has-bg p { color:#fff; }
-.hero.has-bg .btn-primary{ background:#FBA931; color:#1B191A; } 
-*/
-
-  .hero .kicker{ color: var(--base); }     /* #1B191A (negro de marca) */
+        @media(min-width:680px){ .link-card{ grid-column:span 6; } }
+        @media(min-width:980px){ .link-card{ grid-column:span 4; } }
 
 
-  </style>
+        /* Galería — carrusel institucional (scroll-snap, sin JS) */
+        .gallery{ position:relative; }
+        .gallery .slides{
+          display:flex; gap:12px; overflow-x:auto; -webkit-overflow-scrolling:touch;
+          scroll-snap-type:x mandatory; padding:6px 2px 10px;
+        }
+        .gallery .slide{
+          flex:0 0 90%; max-width:90%; scroll-snap-align:center;
+          border:1px solid rgba(24,45,86,.15); border-radius:var(--radius);
+          background:var(--paper); overflow:hidden;
+        }
+        @media (min-width:720px){ .gallery .slide{ flex-basis:70%; max-width:70%; } }
+        @media (min-width:1024px){ .gallery .slide{ flex-basis:60%; max-width:60%; } }
 
-  <script type="application/ld+json">
+        .gallery .media{
+          width:100%; height:clamp(220px, 45vw, 420px);
+          object-fit:cover; object-position:50% 30%; display:block;
+        }
+        .gallery .caption{
+          display:flex; align-items:center; gap:12px; justify-content:space-between;
+          padding:10px 12px; border-top:1px solid rgba(24,45,86,.08);
+        }
+        .gallery .caption strong{ color:var(--primary); }
+        .gallery .actions{ display:flex; gap:8px; }
+        .gallery .btn-download{
+          display:inline-flex; align-items:center; gap:8px;
+          padding:8px 12px; border-radius:999px; font-weight:700;
+          background:transparent; color:var(--primary);
+          border:1px solid rgba(24,45,86,.35);
+        }
+        .gallery .btn-download:hover{ transform:translateY(-1px); }
+        .gallery .dots{
+          display:flex; gap:6px; justify-content:center; margin-top:10px;
+        }
+        .gallery .dot{
+          width:8px; height:8px; border-radius:50%;
+          background:rgba(24,45,86,.25); display:inline-block;
+        }
+        .gallery .dot[aria-current="true"]{ background:var(--primary); }
+
+        /* que el ancla no quede tapada por el header */
+        section[id]{ scroll-margin-top:84px; }
+
+
+        </style>
+        <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -232,150 +140,213 @@
 }
 
   </script>
-</head>
-<body>
-  <header>
-    <div class="container nav">
-      <a class="brand" href="#" aria-label="Inicio">
-        <span class="logo-lockup" role="img" aria-label="Partido Nacional Libertario — isotipo + texto de candidatura">
-          <img src="./brand/pnl-isotipo.svg" alt="Isotipo PNL" height="32" />
-          <span class="logo-sep" aria-hidden="true"></span>
-          <span class="label">
-            <strong>Soledad Calvo</strong>
-            <small>Candidata a Diputada · Distrito 6</small>
-          </span>
-        </span>
-      </a>
-      <nav class="links">
-        <a class="btn btn-outline" href="#propuestas">Propuestas</a>
-        <a class="btn btn-outline is-disabled" aria-disabled="true" title="Próximamente" href="#sumate">Súmate</a>
-        <a class="btn btn-accent is-disabled" aria-disabled="true" title="Próximamente" href="#dona">Dona</a>
-      </nav>
-    </div>
-  </header>
+    </head>
+    <body>
+        <header>
+            <div class="container nav">
+                <a class="brand" href="#" aria-label="Inicio"> <span class="logo-lockup" role="img" aria-label="Partido Nacional Libertario — isotipo + texto de candidatura"> <img src="./brand/pnl-isotipo.svg" alt="Isotipo PNL" height="32"/> <span class="logo-sep" aria-hidden="true"></span> <span class="label"> <strong>Soledad Calvo</strong> <small>Candidata a Diputada · Distrito 6</small> </span> </span> </a>
+                <nav class="links">
+                    <a class="btn btn-outline" href="#propuestas">Propuestas</a>
+                    <a class="btn btn-outline is-disabled" aria-disabled="true" title="Próximamente" href="#sumate">Súmate</a>
+                    <a class="btn btn-accent is-disabled" aria-disabled="true" title="Próximamente" href="#dona">Dona</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!-- HERO -->
+            <section class="hero container safe" id="inicio">
+                <span class="kicker"><b class="brand btn btn-accent chip">&nbsp;Distrito 6</b> </span>
+                <h1>Soledad Calvo<br/>Candidata a Diputada</h1>
+                <p>Una voz cercana y firme para avanzar en <strong>seguridad</strong>, <strong>empleo</strong> y <strong>servicios públicos dignos</strong>. Conoce las prioridades y súmate cuando activemos los formularios.</p>
+                <div class="cta">
+                    <a class="btn btn-primary" href="#propuestas">Ver propuestas</a>
+                    <span class="chip" title="Funciones en preparación">🔒 Funciones en preparación</span>
+                </div>
+            </section>
+            <!-- LINKS -->
+            <!-- SECCIONES RÁPIDAS -->
+            <nav class="container safe sections-nav" aria-label="Secciones principales">
+                <ul class="sections-list">
+                    <li><a href="#biografia">Biografía</a>
+                    </li>
+                    <li><a href="#galeria">Galería</a>
+                    </li>
+                    <li><a href="#links">Links</a>
+                    </li>
+                    <li><a href="#dona">Dona</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- FOTO DESTACADA -->
+            <section class="container safe" id="foto-destacada">
+                <figure class="feature-photo">
+                    <img src="/img/soledad-calvo-d6.jpg" width="591" height="1280" alt="Soledad Calvo junto a dirigente del Partido Nacional Libertario en actividad" loading="lazy" decoding="async">
+                </figure>
+            </section>
+            <!-- PROPUESTAS CLAVE -->
+            <section class="container safe" id="propuestas">
+                <span class="kicker"><b>Tres prioridades</b></span>
+                <h2>Lo urgente para el D6</h2>
+                <div class="grid" style="margin-top:12px">
+                    <article class="card">
+                        <h3>Seguridad y orden</h3>
+                        <p>Plan anti-delincuencia con apoyo a Carabineros, focos de prevención barrial y persecución del narcotráfico.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Trabajo y emprendimiento</h3>
+                        <p>Incentivos a pymes, turismo y puerto; menos trámites y pagos a 30 días para reactivar la zona.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Salud y tiempos de espera</h3>
+                        <p>Destrabar listas con mayor gestión hospitalaria y convenios público–privados transparentes.</p>
+                    </article>
+                </div>
+            </section>
+            <!-- DONA (desactivado visualmente) -->
+            <section class="container section-disabled masked safe" id="dona" data-pgc-edit>
+                <span class="kicker"><b>Apoya la campaña</b></span>
+                <h2>Tu aporte hace la diferencia</h2>
+                <div class="card">
+                    <p class="note">La pasarela de donaciones estará disponible pronto. Esta sección está desactivada por ahora.</p>
+                    <div class="cta" style="justify-content:flex-start">
+                        <button class="btn btn-accent is-disabled" aria-disabled="true" title="Próximamente">Dona ahora</button>
+                        <button class="btn btn-outline is-disabled" aria-disabled="true" title="Próximamente">Ver transparencia</button>
+                    </div>
+                </div>
+            </section>
+            <!-- SÚMATE (desactivado visualmente) -->
+            <!--            <section class="container section-disabled masked safe" id="sumate"><span class="kicker">Participa</span>
+                <h2>Súmate como voluntario/a</h2>
+                <form class="form" onsubmit="return false" aria-disabled="true">
+                    <div class="row">
+                        <div>
+                            <label>Nombre y apellido</label>
+                            <input disabled type="text" placeholder="Próximamente"/>
+                        </div>
+                        <div>
+                            <label>Email</label>
+                            <input disabled type="email" placeholder="Próximamente"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label>Teléfono</label>
+                            <input disabled type="tel" placeholder="Próximamente"/>
+                        </div>
+                        <div>
+                            <label>Comuna</label>
+                            <input disabled type="text" placeholder="Próximamente"/>
+                        </div>
+                    </div>
+                    <div>
+                        <label>¿Cómo te gustaría ayudar?</label>
+                        <textarea disabled rows="3" placeholder="Próximamente"></textarea>
+                    </div>
+                    <button class="btn btn-primary is-disabled" aria-disabled="true" title="Próximamente" type="button">Enviar</button>
+                    <p class="note">Activaremos este formulario en breve.</p>
+                </form>
+            </section> -->
+            <!-- LINKS (al final de la página) -->
+            <!-- GALERÍA -->
+            <section class="container safe" id="galeria">
+              <span class="kicker">Galería</span>
+              <h2>Fotos de prensa</h2>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero container safe" id="inicio">
-      <span class="kicker">Distrito 6</span>
-      <h1>Soledad Calvo<br/>Candidata a Diputada</h1>
-      <p>Una voz cercana y firme para avanzar en <strong>seguridad</strong>, <strong>empleo</strong> y <strong>servicios públicos dignos</strong>. Conoce las prioridades y súmate cuando activemos los formularios.</p>
-      <div class="cta">
-        <a class="btn btn-primary" href="#propuestas">Ver propuestas</a>
-        <span class="chip" title="Funciones en preparación">🔒 Funciones en preparación</span>
-      </div>
-    </section>
+              <div class="gallery" aria-label="Carrusel de fotos">
+                <div class="slides">
+                  <!-- Slide 1 -->
+                  <article class="slide" id="galeria-1">
+                    <img class="media"
+                        src="/img/soledad-calvo-d6.jpg"
+                        alt="Soledad Calvo en actividad de campaña, retrato vertical recortado a banner">
+                    <div class="caption">
+                      <strong>Retrato campaña</strong>
+                      <div class="actions">
+                        <a class="btn-download" href="/img/soledad-calvo-d6.jpg" download>Descargar</a>
+                      </div>
+                    </div>
+                  </article>
+
+                  <!-- Slide 2 (ejemplo, reutiliza misma foto por ahora) -->
+                  <article class="slide" id="galeria-2">
+                    <img class="media"
+                        src="/img/soledad-calvo-d6.jpg"
+                        alt="Soledad Calvo, encuadre alternativo">
+                    <div class="caption">
+                      <strong>Encuadre alternativo</strong>
+                      <div class="actions">
+                        <a class="btn-download" href="/img/soledad-calvo-d6.jpg" download>Descargar</a>
+                      </div>
+                    </div>
+                  </article>
+
+                  <!-- Slide 3 (ejemplo) -->
+                  <article class="slide" id="galeria-3">
+                    <img class="media"
+                        src="/img/soledad-calvo-d6.jpg"
+                        alt="Soledad Calvo en terreno">
+                    <div class="caption">
+                      <strong>En terreno</strong>
+                      <div class="actions">
+                        <a class="btn-download" href="/img/soledad-calvo-d6.jpg" download>Descargar</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Puntos (opcional; marca el primero como activo) -->
+                <div class="dots" aria-hidden="true">
+                  <a class="dot" href="#galeria-1" aria-current="true"></a>
+                  <a class="dot" href="#galeria-2"></a>
+                  <a class="dot" href="#galeria-3"></a>
+                </div>
+              </div>
+            </section>
 
 
 
-    <!-- SECCIONES RÁPIDAS -->
-    <nav class="container safe sections-nav" aria-label="Secciones principales">
-      <ul class="sections-list">
-        <li><a href="#prensa">Prensa</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#links">Links</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a class="is-disabled" aria-disabled="true" title="Próximamente" href="#dona">Dona</a></li>
-      </ul>
-    </nav>
 
-    <!-- FOTO DESTACADA -->
-    <section class="container safe" id="foto-destacada">
-      <figure class="feature-photo">
-        <img
-          src="/img/soledad-calvo-d6.jpg"
-          width="591" height="1280"
-          alt="Soledad Calvo junto a dirigente del Partido Nacional Libertario en actividad"
-          loading="lazy" decoding="async">
-      </figure>
-    </section>
-
-
-    <!-- PROPUESTAS CLAVE -->
-    <section class="container safe" id="propuestas">
-      <span class="kicker">Tres prioridades</span>
-      <h2>Lo urgente para el D6</h2>
-      <div class="grid" style="margin-top:12px">
-        <article class="card">
-          <h3>Seguridad y orden</h3>
-          <p>Plan anti-delincuencia con apoyo a Carabineros, focos de prevención barrial y persecución del narcotráfico.</p>
-        </article>
-        <article class="card">
-          <h3>Trabajo y emprendimiento</h3>
-          <p>Incentivos a pymes, turismo y puerto; menos trámites y pagos a 30 días para reactivar la zona.</p>
-        </article>
-        <article class="card">
-          <h3>Salud y tiempos de espera</h3>
-          <p>Destrabar listas con mayor gestión hospitalaria y convenios público–privados transparentes.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- DONA (desactivado visualmente) -->
-    <section class="container section-disabled masked safe" id="dona">
-      <span class="kicker">Apoya la campaña</span>
-      <h2>Tu aporte hace la diferencia</h2>
-      <div class="card">
-        <p class="note">La pasarela de donaciones estará disponible pronto. Esta sección está desactivada por ahora.</p>
-        <div class="cta" style="justify-content:flex-start">
-          <button class="btn btn-accent is-disabled" aria-disabled="true" title="Próximamente">Dona ahora</button>
-          <button class="btn btn-outline is-disabled" aria-disabled="true" title="Próximamente">Ver transparencia</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- SÚMATE (desactivado visualmente) -->
-    <section class="container section-disabled masked safe" id="sumate">
-      <span class="kicker">Participa</span>
-      <h2>Súmate como voluntario/a</h2>
-      <form class="form" onsubmit="return false" aria-disabled="true">
-        <div class="row">
-          <div>
-            <label>Nombre y apellido</label>
-            <input disabled type="text" placeholder="Próximamente" />
-          </div>
-          <div>
-            <label>Email</label>
-            <input disabled type="email" placeholder="Próximamente" />
-          </div>
-        </div>
-        <div class="row">
-          <div>
-            <label>Teléfono</label>
-            <input disabled type="tel" placeholder="Próximamente" />
-          </div>
-          <div>
-            <label>Comuna</label>
-            <input disabled type="text" placeholder="Próximamente" />
-          </div>
-        </div>
-        <div>
-          <label>¿Cómo te gustaría ayudar?</label>
-          <textarea disabled rows="3" placeholder="Próximamente"></textarea>
-        </div>
-        <button class="btn btn-primary is-disabled" aria-disabled="true" title="Próximamente" type="button">Enviar</button>
-        <p class="note">Activaremos este formulario en breve.</p>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container safe">
-      <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap">
-        <span class="logo-lockup" role="img" aria-label="Partido Nacional Libertario — isotipo + texto de candidatura">
-          <img src="./brand/pnl-isotipo.svg" alt="Isotipo PNL" height="28" />
-          <span class="logo-sep" aria-hidden="true"></span>
-          <span class="label">
-            <strong>Soledad Calvo</strong>
-            <small>Candidata a Diputada · Distrito 6</small>
-          </span>
-        </span>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Plausible (analítica ligera). Reemplaza dominio cuando esté listo.
+            <section class="container safe" id="links"><span class="kicker"><b>Links</b></span>
+                <h2>Enlaces útiles</h2>
+                <div class="links-grid"><a class="link-card" href="#biografia"> <span class="icon">🧾</span> <div class="meta"><strong>Biografía</strong>
+                            <div class="desc">Conócela en detalle</div>
+                        </div> <span class="chip">Leer</span> </a><a class="link-card" href="#" target="_blank" rel="noopener"> <span class="icon">📸</span> <div class="meta"><strong>Instagram oficial</strong>
+                            <div class="desc">@soledadcalvo</div>
+                        </div> <span class="chip">Abrir</span> </a><a class="link-card" href="#" target="_blank" rel="noopener"> <span class="icon">📘</span> <div class="meta"><strong>Facebook</strong>
+                            <div class="desc">Página de campaña</div>
+                        </div> <span class="chip">Abrir</span> </a><a class="link-card" href="#" target="_blank" rel="noopener"> <span class="icon">🐦</span> <div class="meta"><strong>X (Twitter)</strong>
+                            <div class="desc">@soledadcalvo</div>
+                        </div> <span class="chip">Abrir</span> </a><a class="link-card" href="#" target="_blank" rel="noopener"> <span class="icon">💬</span> <div class="meta"><strong>WhatsApp</strong>
+                            <div class="desc">Canal de difusión</div>
+                        </div> <span class="chip">Abrir</span> </a><a class="link-card" href="#" target="_blank" rel="noopener"> <span class="icon">📄</span> <div class="meta"><strong>Programa</strong>
+                            <div class="desc">PDF oficial</div>
+                        </div> <span class="chip">Ver</span> </a><a class="link-card is-disabled" href="#" aria-disabled="true" title="Próximamente"> <span class="icon">🔎</span> <div class="meta"><strong>Transparencia</strong>
+                            <div class="desc">Gastos de campaña</div>
+                        </div> <span class="chip">Pronto</span> </a>
+                    </div>
+            </section>
+            </main>
+            <!-- BIOGRAFÍA -->
+            <section class="container safe" id="biografia"><span class="kicker"><b>Biografía</b></span>
+                <h2>Conócela</h2>
+                <article class="bio">
+                    <p>Candidata emergente, que surge desde la ciudadanía y no desde la casta política tradicional. Representa una nueva forma de hacer política: más cercana, transparente y comprometida con las personas.</p>
+                    <p>Madre, esposa y hermana, una persona de familia con valores cristianos que inspiran su trabajo y sus decisiones. Su experiencia de vida en el extranjero le permitió adquirir una mirada amplia e intercultural, además del dominio del inglés, lo que fortalece su capacidad de diálogo y conexión con diversas realidades.</p>
+                    <p>Profesional del área de la salud, con estudios de postgrado y experiencia en docencia universitaria, combina preparación académica con vocación de servicio. A lo largo de su vida ha demostrado ser una mujer disciplinada, responsable y comprometida con su comunidad.</p>
+                    <p>El octubrismo la llevó a trasladarse con su familia a Olmué, donde hoy emprende con un negocio online dedicado al fitness, demostrando su capacidad de resiliencia, adaptación y liderazgo en nuevos desafíos.</p>
+                    <p>Consciente de la necesidad de abrir espacios de diálogo y análisis, creó un canal de opinión para abordar temas poco conocidos, cuestionar ideas y sacar a la luz verdades relevantes, promoviendo reflexión y debate sobre asuntos actuales que impactan a la comunidad.</p>
+                    <p>Hoy se presenta como una alternativa nueva y diferente, con la firme convicción de aportar a una política más humana y conectada con las verdaderas necesidades de la gente.</p>
+                </article>
+            </section>
+        <footer>
+            <div class="container safe">
+                <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap">
+                    <span class="logo-lockup" role="img" aria-label="Partido Nacional Libertario — isotipo + texto de candidatura"> <img src="./brand/pnl-isotipo.svg" alt="Isotipo PNL" height="28"/> <span class="logo-sep" aria-hidden="true"></span> <span class="label"> <strong>Soledad Calvo</strong> <small>Candidata a Diputada · Distrito 6</small> </span> </span>
+                </div>
+            </div>
+        </footer>
+        <!-- Plausible (analítica ligera). Reemplaza dominio cuando esté listo.
   <script defer data-domain="soledadcalvo.cl" src="https://plausible.io/js/script.js"></script>
   -->
-</body>
+    </body>
 </html>
