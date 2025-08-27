@@ -123,6 +123,76 @@
         }
         .gallery .dot[aria-current="true"]{ background:var(--primary); }
 
+
+        /* === PENDÓN INSTITUCIONAL PNL === */
+        .slide.pendon{
+          position: relative;
+          overflow: hidden;
+          border-radius: var(--radius);
+          border: 1px solid rgba(24,45,86,.18);
+          padding: clamp(12px, 3vw, 24px);
+          min-height: clamp(320px, 48vw, 560px);
+          display: grid;
+          align-items: end;          /* que la figura “apoye” abajo */
+          justify-items: center;
+          background:
+            radial-gradient(40% 40% at 15% 12%, rgba(229,229,229,.10), transparent 60%),
+            linear-gradient(180deg, #182D56 0%, #1B191A 100%); /* azul → base */
+        }
+
+        /* barra de acento superior */
+        .slide.pendon::after{
+          content:"";
+          position:absolute; left:0; right:0; top:0; height:8px;
+          background:#FBA931; opacity:.95; pointer-events:none;
+        }
+
+        /* isotipo como marca de agua */
+        .slide.pendon::before{
+          content:"";
+          position:absolute;
+          right: clamp(12px, 6vw, 48px);
+          top: clamp(12px, 6vw, 48px);
+          width: min(42%, 420px); aspect-ratio:1/1;
+          background: url('/brand/pnl-isotipo.svg') no-repeat center / contain;
+          opacity:.08; pointer-events:none; filter: drop-shadow(0 1px 0 rgba(0,0,0,.03));
+        }
+
+        /* La foto recortada (transparente) encima del fondo */
+        .gallery .slide.pendon .media--cutout{
+          width: clamp(220px, 50%, 540px);
+          height: auto;                /* mantiene proporción */
+          max-height: 90%;
+          object-fit: contain;         /* SIN recorte */
+          display:block;
+          z-index:1;
+          filter: drop-shadow(0 24px 40px rgba(0,0,0,.35));
+        }
+
+        /* Si tenías esta regla para la galería, la anulamos para las cutout */
+        .gallery .media{ /* tu regla general puede quedar; la específica gana prioridad */ }
+        .gallery .slide.pendon .media{ height:auto; }
+
+        /* Texto sobre fondo oscuro */
+        .slide.pendon .caption{
+          color:#fff;
+          width:100%;
+          text-align:left;
+        }
+        .slide.pendon .btn-download{
+          background:#FBA931; color:#1B191A;
+          padding:8px 12px; border-radius:999px; font-weight:700;
+        }
+
+        /* Variante clara (por si quieres un pendón gris corporativo) */
+        .slide.pendon--claro{
+          background:
+            radial-gradient(40% 40% at 15% 12%, rgba(24,45,86,.08), transparent 60%),
+            linear-gradient(180deg, #FFFFFF 0%, #E5E5E5 100%);
+        }
+        .slide.pendon--claro .caption{ color: var(--base); }
+
+
         /* que el ancla no quede tapada por el header */
         section[id]{ scroll-margin-top:84px; }
 
@@ -255,40 +325,40 @@
               <div class="gallery" aria-label="Carrusel de fotos">
                 <div class="slides">
                   <!-- Slide 1 -->
-                  <article class="slide" id="galeria-1">
+                  <article class="slide pendon" id="galeria-1">
                     <img class="media"
-                        src="/img/soledad-calvo-d6.jpg"
+                        src="/img/sole-pendon-vertical-800.webp"
                         alt="Soledad Calvo en actividad de campaña, retrato vertical recortado a banner">
                     <div class="caption">
                       <strong>Retrato campaña</strong>
                       <div class="actions">
-                        <a class="btn-download" href="/img/soledad-calvo-d6.jpg" download>Descargar</a>
+                        <a class="btn-download" href="/img/sole-pendon-vertical-800.webp" download>Descargar</a>
                       </div>
                     </div>
                   </article>
 
                   <!-- Slide 2 (ejemplo, reutiliza misma foto por ahora) -->
-                  <article class="slide" id="galeria-2">
+                  <article class="slide pendon" id="galeria-2">
                     <img class="media"
-                        src="/img/soledad-calvo-d6.jpg"
+                        src="/img/sole-pendon-vertical-1200.webp"
                         alt="Soledad Calvo, encuadre alternativo">
                     <div class="caption">
                       <strong>Encuadre alternativo</strong>
                       <div class="actions">
-                        <a class="btn-download" href="/img/soledad-calvo-d6.jpg" download>Descargar</a>
+                        <a class="btn-download" href="/img/sole-pendon-vertical-1200.webp" download>Descargar</a>
                       </div>
                     </div>
                   </article>
 
                   <!-- Slide 3 (ejemplo) -->
-                  <article class="slide" id="galeria-3">
+                  <article class="slide pendon" id="galeria-3">
                     <img class="media"
-                        src="/img/soledad-calvo-d6.jpg"
+                        src="/img/sole-pendon-vertical-1600.webp"
                         alt="Soledad Calvo en terreno">
                     <div class="caption">
                       <strong>En terreno</strong>
                       <div class="actions">
-                        <a class="btn-download" href="/img/soledad-calvo-d6.jpg" download>Descargar</a>
+                        <a class="btn-download" href="/img/sole-pendon-vertical-1600.webp" download>Descargar</a>
                       </div>
                     </div>
                   </article>
@@ -312,7 +382,7 @@
                             <div class="desc">Conócela en detalle</div>
                         </div> <span class="chip">Leer</span> </a><a class="link-card" href="#" target="_blank" rel="noopener"> <span class="icon">📸</span> <div class="meta"><strong>Instagram oficial</strong>
                             <div class="desc">@soledadcalvo</div>
-                        </div> <span class="chip">Abrir</span> </a><a class="link-card" href="#" target="_blank" rel="noopener"> <span class="icon">📘</span> <div class="meta"><strong>Facebook</strong>
+                        </div> <span class="chip">Abrir</span> </a><a class="link-card" href="https://www.facebook.com/SoleCalvoD6/about" target="_blank" rel="noopener"> <span class="icon">📘</span> <div class="meta"><strong>Facebook</strong>
                             <div class="desc">Página de campaña</div>
                         </div> <span class="chip">Abrir</span> </a><a class="link-card" href="#" target="_blank" rel="noopener"> <span class="icon">🐦</span> <div class="meta"><strong>X (Twitter)</strong>
                             <div class="desc">@soledadcalvo</div>
