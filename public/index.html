@@ -259,6 +259,52 @@
       ==================================================================
       */
       footer { padding: 40px 0; background: var(--primary); border-top: 1px solid rgba(255, 255, 255, 0.15); color: var(--paper); }
+    
+     .feature-photo{
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius);
+    }
+
+    /* 1) Fondo azul como capa INFERIOR (no lo pisa nadie) */
+    .feature-photo::before{
+      content:"";
+      position:absolute; inset:0;
+      z-index: 0;
+    }
+
+    /* 2) Imagen por encima del fondo */
+    .feature-photo img{
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      /* Si quieres reencuadre sin recorte, cambia a contain */
+      object-fit: cover;
+      /* Ajusta si hace falta mover el encuadre */
+      object-position: var(--img-x, 50%) var(--img-y, 20%);
+    }
+
+    /* 3) Isotipo por ENCIMA de todo (visible seguro) */
+    /* Sustituye solo el bloque ::after por este si quieres isotipo blanco */
+    .feature-photo::after{
+      content:"";
+      position:absolute;
+      right: clamp(12px, 4vw, 32px);
+      top: clamp(12px, 4vw, 32px);
+      width: clamp(120px, 20vw, 220px);
+      height: clamp(120px, 20vw, 220px);
+      z-index: 3;
+      -webkit-mask: url("/brand/pnl-isotipo.svg") center/contain no-repeat;
+      mask: url("/brand/pnl-isotipo.svg") center/contain no-repeat;
+      background-color: rgba(255,255,255,.28);  /* color del isotipo */
+      pointer-events:none;
+      filter: drop-shadow(0 1px 0 rgba(0,0,0,.03));
+    }
+
+
+    
     </style>
 
     <!-- ===================== DATOS ESTRUCTURADOS ===================== -->
@@ -328,7 +374,8 @@
       <!-- ===================== FOTO DESTACADA ===================== -->
       <section class="container safe" id="foto-destacada">
         <figure class="feature-photo">
-          <img src="/img/sole_kaiser_3.png" width="591" height="1280" alt="Soledad Calvo junto a dirigente del Partido Nacional Libertario en actividad" loading="lazy" decoding="async" />
+          <img src="/img/sole_kaiser_3.png" width="591" height="1280" alt="Soledad Calvo junto a dirigente del Partido Nacional Libertario en actividad" loading="lazy" decoding="async" 
+           style="--img-x:50%; --img-y:20%;"/>
         </figure>
       </section>
 
