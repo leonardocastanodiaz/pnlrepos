@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="400"
+   height="400"
+   viewBox="0 0 400 400"
+   version="1.1"
+   id="svg27"
+   sodipodi:docname="pnl_backdrop_tile_exact.svg"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview27"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.18384776"
+     inkscape:cx="198.53383"
+     inkscape:cy="198.53383"
+     inkscape:window-width="1176"
+     inkscape:window-height="690"
+     inkscape:window-x="96"
+     inkscape:window-y="46"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg27" />
+  <defs
+     id="defs21">
+    <symbol
+       id="isotipo_navy"
+       viewBox="0 0 64.681801 99.336044">
+      <g
+         transform="translate(-66.903198,-98.952298)"
+         id="g5">
+        <path
+           d="m 0,0 v 0 c -14.496,-10.409 -34.024,-10.382 -48.492,0.066 l -121.635,87.845 v 0 c 14.372,10.468 33.846,10.508 48.26,0.098 z"
+           fill="#192c55"
+           fill-opacity="1"
+           fill-rule="nonzero"
+           stroke="none"
+           transform="matrix(0.35277776,0,0,-0.35277776,126.92022,140.10803)"
+           clip-path="url(#clipPath2208)"
+           id="path1" />
+        <path
+           d="m 0,0 v 0 c -14.496,-10.409 -34.024,-10.382 -48.491,0.066 l -83.383,60.218 0.16,0.115 c 14.364,10.358 33.747,10.352 48.104,-0.016 z"
+           fill="#192c55"
+           fill-opacity="1"
+           fill-rule="nonzero"
+           stroke="none"
+           transform="matrix(0.35277776,0,0,-0.35277776,117.29864,149.44174)"
+           clip-path="url(#clipPath2210)"
+           id="path2" />
+        <path
+           d="m 0,0 -55.238,-39.88 -24.625,-17.796 c -4.703,20.761 1.181,35.809 13.096,44.414 L 11.572,43.312 C 17.625,28.874 11.913,8.604 0,0"
+           fill="#192c55"
+           fill-opacity="1"
+           fill-rule="nonzero"
+           stroke="none"
+           transform="matrix(0.35277776,0,0,-0.35277776,122.83769,161.67041)"
+           clip-path="url(#clipPath2212)"
+           id="path3" />
+        <path
+           d="m 0,0 -27.964,-20.193 -24.625,-17.796 c -4.703,20.761 1.181,35.809 13.096,44.414 l 51.065,36.887 v 0 C 17.625,28.874 11.913,8.604 0,0"
+           fill="#192c55"
+           fill-opacity="1"
+           fill-rule="nonzero"
+           stroke="none"
+           transform="matrix(0.35277776,0,0,-0.35277776,113.21612,184.88667)"
+           clip-path="url(#clipPath2214)"
+           id="path4" />
+        <path
+           d="m 0,0 9.114,-22.138 c 0.392,-0.952 1.286,-1.601 2.312,-1.68 l 23.871,-1.827 -18.238,-15.509 c -0.784,-0.666 -1.126,-1.718 -0.883,-2.717 l 5.639,-23.268 -20.386,12.553 c -0.876,0.54 -1.982,0.54 -2.858,0 l -20.386,-12.553 5.639,23.268 c 0.243,0.999 -0.099,2.051 -0.883,2.717 l -18.238,15.509 23.871,1.827 c 1.026,0.079 1.92,0.728 2.312,1.68 z"
+           fill="#fca311"
+           fill-opacity="1"
+           fill-rule="nonzero"
+           stroke="none"
+           transform="matrix(0.35277776,0,0,-0.35277776,119.133,98.952298)"
+           clip-path="url(#clipPath2216)"
+           id="path5" />
+      </g>
+      <defs
+         id="defs10">
+        <clipPath
+           id="clipPath2208">
+          <path
+             id="path6" />
+        </clipPath>
+        <clipPath
+           id="clipPath2210">
+          <path
+             id="path7" />
+        </clipPath>
+        <clipPath
+           id="clipPath2212">
+          <path
+             id="path8" />
+        </clipPath>
+        <clipPath
+           id="clipPath2214">
+          <path
+             id="path9" />
+        </clipPath>
+        <clipPath
+           id="clipPath2216">
+          <path
+             id="path10" />
+        </clipPath>
+      </defs>
+    </symbol>
+    <symbol
+       id="isotipo_white"
+       viewBox="0 0 64.681801 99.336044">
+      <g
+         transform="translate(-66.903198,-98.952298)"
+         id="g15">
+        <path
+           d="m 0,0 v 0 c -14.496,-10.409 -34.024,-10.382 -48.492,0.066 l -121.635,87.845 v 0 c 14.372,10.468 33.846,10.508 48.26,0.098 z"
+           fill="#FFFFFF"
+           fill-opacity="1"
+           fill-rule="nonzero"
+           stroke="none"
+           transform="matrix(0.35277776,0,0,-0.35277776,126.92022,140.10803)"
+           clip-path="url(#clipPath2208w)"
+           id="path11" />
+        <path
+           d="m 0,0 v 0 c -14.496,-10.409 -34.024,-10.382 -48.491,0.066 l -83.383,60.218 0.16,0.115 c 14.364,10.358 33.747,10.352 48.104,-0.016 z"
+           fill="#FFFFFF"
+           fill-opacity="1"
+           fill-rule="nonzero"
+           stroke="none"
+           transform="matrix(0.35277776,0,0,-0.35277776,117.29864,149.44174)"
+           clip-path="url(#clipPath2210w)"
+           id="path12" />
+        <path
+           d="m 0,0 -55.238,-39.88 -24.625,-17.796 c -4.703,20.761 1.181,35.809 13.096,44.414 L 11.572,43.312 C 17.625,28.874 11.913,8.604 0,0"
+           fill="#FFFFFF"
+           fill-opacity="1"
+           fill-rule="nonzero"
+           stroke="none"
+           transform="matrix(0.35277776,0,0,-0.35277776,122.83769,161.67041)"
+           clip-path="url(#clipPath2212w)"
+           id="path13" />
+        <path
+           d="m 0,0 -27.964,-20.193 -24.625,-17.796 c -4.703,20.761 1.181,35.809 13.096,44.414 l 51.065,36.887 v 0 C 17.625,28.874 11.913,8.604 0,0"
+           fill="#FFFFFF"
+           fill-opacity="1"
+           fill-rule="nonzero"
+           stroke="none"
+           transform="matrix(0.35277776,0,0,-0.35277776,113.21612,184.88667)"
+           clip-path="url(#clipPath2214w)"
+           id="path14" />
+        <path
+           d="m 0,0 9.114,-22.138 c 0.392,-0.952 1.286,-1.601 2.312,-1.68 l 23.871,-1.827 -18.238,-15.509 c -0.784,-0.666 -1.126,-1.718 -0.883,-2.717 l 5.639,-23.268 -20.386,12.553 c -0.876,0.54 -1.982,0.54 -2.858,0 l -20.386,-12.553 5.639,23.268 c 0.243,0.999 -0.099,2.051 -0.883,2.717 l -18.238,15.509 23.871,1.827 c 1.026,0.079 1.92,0.728 2.312,1.68 z"
+           fill="#fca311"
+           fill-opacity="1"
+           fill-rule="nonzero"
+           stroke="none"
+           transform="matrix(0.35277776,0,0,-0.35277776,119.133,98.952298)"
+           clip-path="url(#clipPath2216w)"
+           id="path15" />
+      </g>
+      <defs
+         id="defs20">
+        <clipPath
+           id="clipPath2208w">
+          <path
+             id="path16" />
+        </clipPath>
+        <clipPath
+           id="clipPath2210w">
+          <path
+             id="path17" />
+        </clipPath>
+        <clipPath
+           id="clipPath2212w">
+          <path
+             id="path18" />
+        </clipPath>
+        <clipPath
+           id="clipPath2214w">
+          <path
+             id="path19" />
+        </clipPath>
+        <clipPath
+           id="clipPath2216w">
+          <path
+             id="path20" />
+        </clipPath>
+      </defs>
+    </symbol>
+  </defs>
+  <rect
+     x="0"
+     y="0"
+     width="200"
+     height="200"
+     fill="#192c55"
+     id="rect21" />
+  <rect
+     x="200"
+     y="0"
+     width="200"
+     height="200"
+     fill="#F3A61C"
+     id="rect22" />
+  <rect
+     x="0"
+     y="200"
+     width="200"
+     height="200"
+     fill="#FFFFFF"
+     id="rect23" />
+  <rect
+     x="200"
+     y="200"
+     width="200"
+     height="200"
+     fill="#192c55"
+     id="rect24" />
+  <g
+     transform="translate(46.60641325720602,18.0) scale(1.6509616589925808)"
+     id="g24">
+    <use
+       href="#isotipo_white"
+       id="use24" />
+  </g>
+  <g
+     transform="translate(246.60641325720601,18.0) scale(1.6509616589925808)"
+     id="g25">
+    <use
+       href="#isotipo_white"
+       id="use25" />
+  </g>
+  <g
+     transform="translate(46.60641325720602,218.0) scale(1.6509616589925808)"
+     id="g26">
+    <use
+       href="#isotipo_navy"
+       id="use26" />
+  </g>
+  <g
+     transform="translate(246.60641325720601,218.0) scale(1.6509616589925808)"
+     id="g27">
+    <use
+       href="#isotipo_white"
+       id="use27" />
+  </g>
+</svg>
