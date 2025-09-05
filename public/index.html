@@ -228,7 +228,7 @@
       /* Pendón institucional */
       .slide.pendon { position: relative; overflow: hidden; border-radius: var(--radius); border: 1px solid rgba(24, 45, 86, 0.18); padding: clamp(12px, 3vw, 24px); min-height: clamp(320px, 48vw, 560px); display: grid; align-items: end; justify-items: center; background: radial-gradient(40% 40% at 15% 12%, rgba(229, 229, 229, 0.1), transparent 60%), linear-gradient(180deg, #182d56 0%, #1b191a 100%); }
       .slide.pendon::after { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 8px; background: #fba931; opacity: 0.95; pointer-events: none; }
-      .slide.pendon::before { content: ''; position: absolute; right: clamp(12px, 6vw, 48px); top: clamp(12px, 6vw, 48px); width: min(42%, 420px); aspect-ratio: 1/1; background: url('/brand/pnl-isotipo.svg') no-repeat center / contain; opacity: 0.08; pointer-events: none; filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.03)); }
+      .slide.pendon::before { content: 'none'; position: absolute; right: clamp(12px, 6vw, 48px); top: clamp(12px, 6vw, 48px); width: min(42%, 420px); aspect-ratio: 1/1; background: none; opacity: 0.08; pointer-events: none; filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.03)); }
       .slide.pendon .media { width: clamp(220px, 50%, 540px); height: auto; max-height: 90%; object-fit: contain; display: block; z-index: 1; filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.35)); }
       .slide.pendon .caption { color: #fff; width: 100%; text-align: left; }
       .slide.pendon .btn-download { background: #fba931; color: #1b191a; }
