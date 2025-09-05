@@ -22,7 +22,7 @@ export function middleware(req: NextRequest) {
   const decoded = atob(encoded);
   const [user, pass] = decoded.split(':');
 
-  if (user !== process.env.PREVIEW_BASIC_USER || pass !== process.env.PREVIEW_BASIC_PASS) {
+  if (user !== process.env.BASIC_AUTH_USER|| pass !== process.env.BASIC_AUTH_PASS) {
     return new NextResponse('Forbidden', { status: 403 });
   }
 
